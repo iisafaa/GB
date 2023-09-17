@@ -1,0 +1,48 @@
+.start-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:white;
+  }
+  
+  .logo {
+    animation: logoAnimation 2s ease-in-out;
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .text {
+    opacity: 0;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: textAnimation 2s ease-in-out forwards;
+    animation-delay: 1s;
+    font-family:'Tajawal'
+  }
+  
+  @keyframes logoAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(0.8);
+    }
+    100% {
+      transform: translateX(-100%) scale(0.5);
+    }
+  }
+  
+  @keyframes textAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
