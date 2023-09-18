@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+      
+        th, td {
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+      
+        th {
+          background-color: #f2f2f2;
+        }
+      
+        tr:nth-child(even) { 
+          background-color: #f9f9f9;
+        }
+      </style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="districtsPage.js"></script> -->
+    <link rel="stylesheet" href="Stylesheet.css">
+    <title>الاحياء</title>
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
+    
+
+                <!-- table -->
+                <div style="color: black">
+                    <table>
+
+                        <thead>
+                            <th>اسم الحي</th>
+                            <th>تاريخ الإضافة</th>
+                            <th>نسبة التلوث</th>
+                            <th>حالة المعالجة</th>
+                        </thead>
+
+                        <tbody id="tbody1">
+                        </tbody>
+
+                    </table> 
+                </div>
+            
+    
+    <script src="districtsPage.js" type="module"></script>                     
+                  
+</body>
+ 
+</html>
