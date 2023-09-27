@@ -901,3 +901,62 @@
 .table-container .tbody tr:hover {
     background-color: #f2f2f2; /* Replace with your desired gray color */
   }
+
+
+
+.screen .overlappp-nigberhood {
+    position: absolute;
+    width: 1196px;
+    height: 597px;
+    top: 148px;
+    left: 43px;
+    border-radius: 10px;
+}
+
+.screen .centerbar-nigberhood {
+    position: absolute;
+    width: 1196px;
+    height: 157px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+  /* image boxes */
+  .screen .images{
+    position: absolute;
+    width: 1196px;
+    height:max-content;
+    top: 320px;
+    left: 43px;
+    border-radius: 10px;
+
+  }
+  .screen .Image-box{
+  position: absolute;
+    width: max-content;
+    height: max-content;
+    top: 0;
+    left: 0;
+   background-color: white;
+    border-radius: 10px;
+  }
+ 
+    .screen .image-box .box {
+    position: fixed;
+    width: 241px;
+    height: 223px;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    }
+    .screen .image-box .inner-image {
+    position: absolute;
+    width: 218px;
+    height: 204px;
+    top: 10px;
+    left: 11px;
+    object-fit: cover;
+    }
