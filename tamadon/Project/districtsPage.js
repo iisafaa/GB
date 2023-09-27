@@ -23,9 +23,6 @@
     const db = getDatabase();
     const dbref = ref(db);
     
-    //const storage = firebase.storage();
-    //const storageRef = storage.ref();
-    
     var tbody = document.getElementById('tbody1');
     const btn = document.querySelector('.Side-button2');
     
@@ -44,6 +41,7 @@
                     document.getElementById('concrete').innerHTML = snapshot.val().ToatalOfConcreteBarrier + ' صبة';
                     document.getElementById('potholes').innerHTML = snapshot.val().ToatalOfPothole + ' حفرة';
                     document.getElementById('sand').innerHTML = snapshot.val().ToatalOfSandOnRoad + ' رمل على الطريق';
+                    //album(neighborhood);
                 } else {
 
                     alert('No data found');
@@ -133,7 +131,81 @@
             alert(error);
             return 0;
         }
+    }
+
+
+    // async function album(neighborhood){
+    //     const dbref = ref(db);
+    //     var index = 0;
+    //     await get(child(dbref, "MAKKAH/" + neighborhood + '/url')).then((snapshot) => {
+    //       if (snapshot.exists()) {
+    //         snapshot.forEach((childSnapshot) => {
+    //           crd.style.Display = "felx"; //to show the content of card class
+
+    //           const url = childSnapshot.val();
+
+    //           const box = document.createElement("div"); //create div element 
+    //           box.classList.add("box"); //adding class to div element
+
+    //           const imgBox = document.createElement("div"); //create div element 
+            
+    //           const Image = document.createElement("img"); //create img element
+    //           Image.src = url.index;
+    //           index++;
+    //           Image.alt = "Visual Pollution Image";
+              
+    //           imgBox.appendChild(box);
+    //           box.appendChild(Image); //the img child under the div element
+    //           imgBox.classList.add("Image-box"); //adding class to div element
+    //           document.querySelector(".images").appendChild(imgBox);
+    //         });
+    //       } else {
+    //         alert("No data found");
+    //       }
+    //     }).catch((error) => {
+    //       alert(error);
+    //     });
+    // }
+
+
+    async function album(neighborhood) {
+        const dbref = ref(db);
+        var index = 0;
+      
+        try {
+          const snapshot = await get(child(dbref, "MAKKAH/" + neighborhood + '/url'));
+        
+          if (snapshot.exists()) {
+            snapshot.forEach((urlSnapshot) => {
+              
+        
+                const url = urlSnapshot.val();
+        
+                const box = document.createElement("div");
+                box.classList.add("box");
+        
+                const imgBox = document.createElement("div");
+                imgBox.classList.add("box")
+        
+                const image = document.createElement("img");
+                image.src = url;
+                image.alt = "Visual Pollution Image";
+                image.classList.add("inner-image");
+        
+                imgBox.appendChild(box);
+                box.appendChild(image);
+                imgBox.classList.add("Image-box");
+                document.querySelector(".images").appendChild(imgBox);
+             
+            });
+          } else {
+            alert("No data found");
+          }
+        } catch (error) {
+          alert(error);
         }
+      }
+    
+    
     
 
-    //FindData();
