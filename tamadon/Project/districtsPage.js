@@ -1,5 +1,4 @@
 
-    //alert("script enterd");
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
@@ -16,13 +15,13 @@
         appId: "1:869500719030:web:df7226ffd89be363e4bb17",
         measurementId: "G-CW1KF3Z7ZZ"
     };
-    
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
     
     
     const db = getDatabase();
+    const dbref = ref(db);
     
     //const storage = firebase.storage();
     //const storageRef = storage.ref();
@@ -30,48 +29,25 @@
     var tbody = document.getElementById('tbody1');
     const btn = document.querySelector('.Side-button2');
     
-    function addItemToTable(dist, date, prcnt, state){
-        let trow = document.createElement('trow');
-        let td1 = document.createElement('td');
-        let td2 = document.createElement('td');
-        let td3 = document.createElement('td');
-        let td4 = document.createElement('td');
-
-        td1.innerHTML = dist;
-        td2.innerHTML = date;
-        td3.innerHTML = prcnt;
-        td4.innerHTML = state;
+    export async function neighborhoodPage(){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const neighborhood = urlParams.get('neighborhood');
         
-        trow.appendChild(td1);
-        trow.appendChild(td2);
-        trow.appendChild(td3);
-        trow.appendChild(td4);
-
-        tbody.appendChild(trow);
-        
-    }
-
-    function FindData() {
-        //alert('find entered');
-        tbody.innerHTML="";
         const dbref = ref(db);
-        alert(dbref);
-        get(child(dbref, "MAKKAH/")).then((snapshot) => {
-                if(snapshot.exists()) {
-                    snapshot.forEach((childSnapshot) => {
-                   // alert(childSnapshot.val().neighborhood);
-                    addItemToTable( childSnapshot.val().neighborhood,
-                                    childSnapshot.val().DateAdded,
-                                    'prcnt',
-                                    'state');
-                    });    
+
+        await get(child(dbref, "MAKKAH/" + neighborhood))
+            .then((snapshot) => {
+                if (snapshot.exists()) {
+                            alert(snapshot.val().neighborhood + ' مكة');
+                    document.getElementById('neigbour').innerHTML = snapshot.val().neighborhood + ' مكة';
+                    document.getElementById('concrete').innerHTML = snapshot.val().ToatalOfConcreteBarrier + ' صبة';
+                    document.getElementById('potholes').innerHTML = snapshot.val().ToatalOfPothole + ' حفرة';
+                    document.getElementById('sand').innerHTML = snapshot.val().ToatalOfSandOnRoad + ' رمل على الطريق';
                 } else {
-                    
-                    // bookCard.style.display = 'none';
-                    // notFound.style.display = 'flex';
-                    alert('nothin found');
+
+                    alert('No data found');
                     return;
-                    //alert('No data found');
                 }
             })
             .catch((error) => {
@@ -79,9 +55,85 @@
             });
     }
 
-    FindData();
+    function addItemToTable(dist, date, prcnt){
+        let trow = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
 
-//     btn.addEventListener('click', function (e) {
-    //     alert("gigigig");
-    //     FindData();
-    // });
+        td1.innerHTML = dist;
+        td2.innerHTML = date;
+        td3.innerHTML = prcnt;
+        
+        trow.appendChild(td3);
+        trow.appendChild(td2);
+        trow.appendChild(td1);
+
+        tbody.appendChild(trow);
+
+        // event listener to the row
+        trow.addEventListener('click', async function() {
+            // Perform action based on the clicked row
+            // Example: Log the neighborhood name to the console
+            const url = 'neighborhood.html?neighborhood=' + encodeURIComponent(dist);
+            // Redirect the user to the new page
+            console.log('Clicked row:', dist);
+            window.location.href = url;
+            // Replace the above console.log statement with your desired action
+        });
+        
+    }
+
+    export async  function FindData() {
+        console.log("Function called on page load");
+
+        tbody.innerHTML = "";
+        const totalPollution = await totalData();
+        // alert(typeof totalPollution, totalPollution);
+        try {
+        const snapshot = await get(child(dbref, "MAKKAH/"));
+        if (snapshot.exists()) {
+            snapshot.forEach((childSnapshot) => {
+            const concreteBarrier = childSnapshot.val().ToatalOfConcreteBarrier || 0;
+            const pothole = childSnapshot.val().ToatalOfPothole || 0;
+            const sandOnRoad = childSnapshot.val().ToatalOfSandOnRoad || 0;
+            const percentage = ((concreteBarrier + pothole + sandOnRoad) / totalPollution) * 100;
+    
+            addItemToTable(
+                childSnapshot.val().neighborhood,
+                childSnapshot.val().DateAdded,
+                percentage.toFixed(2) + '%'
+            );
+            });
+        } else {
+            alert('nothing found');
+            return;
+        }
+        } catch (error) {
+        alert(error);
+        }
+    }
+
+    async function totalData() {
+        try {
+            const snapshot = await get(child(dbref, "MAKKAH/"));
+            let totalPollution = 0;
+            if (snapshot.exists()) {
+            snapshot.forEach((childSnapshot) => {
+                totalPollution += childSnapshot.val().ToatalOfConcreteBarrier;
+                totalPollution += childSnapshot.val().ToatalOfPothole;
+                totalPollution += childSnapshot.val().ToatalOfSandOnRoad;
+            });
+            return totalPollution;
+            } else {
+            alert('nothing found');
+            return 0;
+            }
+        } catch (error) {
+            alert(error);
+            return 0;
+        }
+        }
+    
+
+    //FindData();

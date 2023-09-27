@@ -675,8 +675,8 @@
     position: absolute;
     width: 337px;
     height: 128px;
-    top: 143px;
-    left: 865px;
+    top: 10px;
+    left: 845px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -736,8 +736,8 @@
     position: absolute;
     width: 337px;
     height: 128px;
-    top: 143px;
-    left: 464px;
+    top: 10px;
+    left: 444px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -799,8 +799,8 @@
     position: absolute;
     width: 337px;
     height: 128px;
-    top: 143px;
-    left: 63px;
+    top: 10px;
+    left: 43px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -856,3 +856,48 @@
     left: 17px;
     object-fit: cover;
 }
+
+.table-container {
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.table-container table {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+    border-radius: 8px;
+    font-family: 'Tajawal', Arial, sans-serif;
+}
+
+.table-container thead{
+    background-color: #dde9cd;
+    height: 3rem;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('Tajawal-Light.ttf') format('truetype');
+    /* Add additional font files if you have different font weights or styles */
+  }
+
+.table-container th{
+    font-family: 'Tajawal', Arial, sans-serif;
+    font-size: 20px;
+    color: #5a8b59;
+    border-radius: 8px;
+    border: none; 
+    font-weight: bold;
+}
+
+.table-container tr{
+    height: 42px;
+    font-size: 17px
+}
+
+.table-container .tbody tr:hover {
+    background-color: #f2f2f2; /* Replace with your desired gray color */
+  }

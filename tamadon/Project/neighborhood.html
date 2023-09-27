@@ -7,16 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Stylesheet.css">
     <title>منطقة معينة</title>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
+
+    <script type="module">
+        // Import the function from the module script
+        import { neighborhoodPage } from './districtsPage.js';
+    
+        document.addEventListener('DOMContentLoaded', function() {
+          // Call the imported function
+          neighborhoodPage();
+        });
+      </script>
+    
 </head>
 
 <body>
     <div class="screen">
-
         <div class="div">
-
-
-
-
             <div class="upbar"><!-- UP Bar  -->
                 <div class="overlap-2">
                     <div class="overlap-group-2">
@@ -25,7 +34,7 @@
                     </div>
                     <img class="makkah-logo" src="makkahLogo.png" />
                     <div class="overlap-">
-                        <div class="text-wrapper-6">مكة - الشوقية</div>
+                        <div class="text-wrapper-6" id="neigbour"></div>
 
                         <div class="dropdown">
                             <button class="dropbtn">
@@ -37,11 +46,7 @@
                                 <a href="#">Link 3</a>
                             </div>
                         </div>
-
                     </div>
-
-
-
                 </div>
             </div>
 
@@ -63,27 +68,37 @@
 
             </div>
 
+            <div class="overlappp">
+                <div class="centerbar">
+                    <div class="concret-barrier-box">
+                    <div class="concretNumber">إجمالي عدد الصبات</div>
+                    <div class="NumOfConcret" id="concrete"></div>
+                    <div class="con-img"><img class="barricade" src="concretebrair.png" /></div>
+                    </div>
 
-            <div class="concret-barrier-box">
-                <div class="concretNumber">إجمالي عدد الصبات</div>
-                <div class="NumOfConcret">100 صبة</div>
-                <div class="con-img"><img class="barricade" src="concretebrair.png" /></div>
-            </div>
+                    <div class="sand-box">
+                        <div class="sandNum"> إجمالي عدد الرمل<br />على الطريق</div>
+                        <div class="NumOFSand" id="sand"></div>
+                        <div class="sand-img"><img class="ssss" src="sand.png" /></div>
+                    </div>
 
-            <div class="sand-box">
-                <div class="sandNum"> إجمالي عدد الرمل<br />على الطريق</div>
-                <div class="NumOFSand">236 رمل على الطريق</div>
-                <div class="sand-img"><img class="ssss" src="sand.png" /></div>
-            </div>
+                    <div class="patholes-box">
+                        <div class="patholesNum">إجمالي عدد الحفر</div>
+                        <div class="NumOfPatholes" id="potholes"></div>
+                        <div class="pothole-img"><img class="pothole" src="patholes.png" /></div>
+                    </div>
 
-            <div class="patholes-box">
-                <div class="patholesNum">إجمالي عدد الحفر</div>
-                <div class="NumOfPatholes">520 حفرة</div>
-                <div class="pothole-img"><img class="pothole" src="patholes.png" /></div>
+                    <div>
+                        
+                    </div>
+                </div>
             </div>
+            
 
         </div>
     </div>
+    
+    <script src="districtsPage.js" type="module"></script>      
 </body>
 
 </html>
