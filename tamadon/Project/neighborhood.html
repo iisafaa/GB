@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -14,13 +13,13 @@
     <script type="module">
         // Import the function from the module script
         import { neighborhoodPage } from './districtsPage.js';
-    
-        document.addEventListener('DOMContentLoaded', function() {
-          // Call the imported function
-          neighborhoodPage();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Call the imported function
+            neighborhoodPage();
         });
-      </script>
-    
+    </script>
+
 </head>
 
 <body>
@@ -53,7 +52,9 @@
             <div class="sidebar"><!-- Side Bar  -->
                 <div class="overlap-3">
                     <img class="tammadon" src="Tammadon.png" />
-                    <div style="width: 249px; height: 0px; left: 15px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid"></div>
+                    <div
+                        style="width: 249px; height: 0px; left: 15px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
+                    </div>
                 </div>
                 <button onclick="window.location.href='staticsPage.html';" , class="Side-button1">
                     <span class="text-wrapper-12">احصائيات</span>
@@ -71,9 +72,9 @@
             <div class="overlappp-nigberhood">
                 <div class="centerbar-nigberhood">
                     <div class="concret-barrier-box">
-                    <div class="concretNumber">إجمالي عدد الصبات</div>
-                    <div class="NumOfConcret" id="concrete"></div>
-                    <div class="con-img"><img class="barricade" src="concretebrair.png" /></div>
+                        <div class="concretNumber">إجمالي عدد الصبات</div>
+                        <div class="NumOfConcret" id="concrete"></div>
+                        <div class="con-img"><img class="barricade" src="concretebrair.png" /></div>
                     </div>
 
                     <div class="sand-box">
@@ -88,45 +89,61 @@
                         <div class="pothole-img"><img class="pothole" src="patholes.png" /></div>
                     </div>
 
-                   
-
                 </div>
 
             </div>
 
 
-            <div class="images">
 
-                 <div class="Image-box">
-                     <div class="box"> 
+
+
+            <!-- images -->
+            <div class="images-container">
+                <div class="grid-container">
+
+                    <div class="Image-box">
                         <img class="inner-image" src="Tammadon.png" />
-                     </div>
-                 </div>
-
-                 <div class="Image-box">
-                    <div class="box"> 
-                       <img class="inner-image" src="sand.png" />
                     </div>
-                </div>
 
-                <div class="Image-box">
-                    <div class="box"> 
-                       <img class="inner-image" src="num.png" />
+                    <div class="Image-box">
+                        <img class="inner-image" src="num.png" />
                     </div>
+
+                    <div class="Image-box">
+                        <img class="inner-image" src="X.png" />
+                    </div>
+
+                    <div class="Image-box">
+                        <img class="inner-image" src="sand.png" />
+                    </div>
+
+                    <div class="Image-box">
+                        <img class="inner-image" src="Tammadon.png" />
+                    </div>
+
+                    <div class="Image-box">
+                        <img class="inner-image" src="num.png" />
+                    </div>
+
+                    <div class="Image-box">
+                        <img class="inner-image" src="X.png" />
+                    </div>
+
+                    <div class="Image-box">
+                        <img class="inner-image" src="sand.png" />
+                    </div>
+
                 </div>
-
-
             </div>
 
-
-            
-            </div>
-     </div>
 
         </div>
     </div>
-    
-    <script src="districtsPage.js" type="module"></script>      
+
+    </div>
+    </div>
+
+    <script src="districtsPage.js" type="module"></script>
 </body>
 
 </html>

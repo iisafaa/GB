@@ -2,9 +2,11 @@
 ::-webkit-scrollbar {
     width: 7px;
 }
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #5B8B5A;
     border-radius: 12px;
@@ -12,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background:#5B8B5A;
+    background: #5B8B5A;
 }
 
 .screen {
@@ -52,7 +54,7 @@
     line-height: normal;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .smallrec {
@@ -84,7 +86,7 @@
     line-height: normal;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 
@@ -121,7 +123,7 @@
 .screen .text-wrapper-3 {
     top: 60px;
     left: 85px;
-   /* font-family: "Tajawal-Medium", Helvetica;*/
+    /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
     font-size: 18px;
@@ -130,48 +132,48 @@
     line-height: normal;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .text-wrapper-4 {
     top: 110px;
     left: 140px;
     position: absolute;
-   /* font-family: "Inter-Bold", Helvetica;*/
+    /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
     color: #000000;
     font-size: 18px;
     letter-spacing: 0;
     line-height: normal;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .text-wrapper-5 {
     top: 110px;
     left: 985px;
     position: absolute;
-   /* font-family: "Inter-Bold", Helvetica;*/
+    /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
     color: #000000;
     font-size: 18px;
     letter-spacing: 0;
     line-height: normal;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .text-wrapper-66 {
     top: 60px;
     left: 910px;
-   /* font-family: "Tajawal-Medium", Helvetica;*/
+    /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
-    color:#000000;
+    color: #000000;
     font-size: 18px;
     text-align: left;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .overlap {
@@ -196,28 +198,28 @@
     top: 115px;
     left: 560px;
     position: absolute;
-   /* font-family: "Inter-Bold", Helvetica;*/
+    /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
     color: #000000;
     font-size: 18px;
     letter-spacing: 0;
     line-height: normal;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .text-wrapper-8 {
     top: 50px;
     left: 500px;
-   /* font-family: "Tajawal-Medium", Helvetica;*/
+    /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
-    color:#000000;
+    color: #000000;
     font-size: 18px;
     text-align: right;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .overlap-group {
@@ -261,7 +263,7 @@
 .screen .statetext {
     top: 22px;
     left: 1051px;
-   /* font-family: "Inter-Bold", Helvetica;*/
+    /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
     color: #000000;
     font-size: 20px;
@@ -270,7 +272,7 @@
     line-height: normal;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .upbar {
@@ -303,7 +305,7 @@
     height: 34px;
     top: 0;
     left: 0;
-   /* font-family: "Tajawal-Medium", Helvetica;*/
+    /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #5b8b5a;
     font-size: 14px;
@@ -311,7 +313,7 @@
     line-height: 21.8px;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .text-wrapper-11 {
@@ -327,7 +329,7 @@
     line-height: 21.8px;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .makkah-logo {
@@ -352,7 +354,7 @@
     letter-spacing: -0.48px;
     line-height: 21.8px;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 
@@ -376,7 +378,7 @@
 }
 
 .screen .tammadon {
-    
+
     position: absolute;
     width: 92px;
     height: 81px;
@@ -415,9 +417,9 @@
     line-height: 21.8px;
     white-space: nowrap;
     direction: rtl;
-    font-family:'Tajawal';
-   
-    
+    font-family: 'Tajawal';
+
+
 }
 
 .screen .chart {
@@ -460,7 +462,7 @@
     line-height: 21.8px;
     white-space: nowrap;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .element-plus {
@@ -570,7 +572,7 @@
     line-height: 20px;
     white-space: nowrap;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .filter-search {
@@ -606,7 +608,7 @@
     white-space: nowrap;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .down-arrow {
@@ -693,7 +695,7 @@
     letter-spacing: 0;
     line-height: normal;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .NumOfConcret {
@@ -709,7 +711,7 @@
     line-height: normal;
     white-space: nowrap;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .con-img {
@@ -754,7 +756,7 @@
     line-height: normal;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .NumOFSand {
@@ -770,7 +772,7 @@
     line-height: normal;
     white-space: nowrap;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .sand-img {
@@ -817,7 +819,7 @@
     line-height: normal;
     position: absolute;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .NumOfPatholes {
@@ -833,7 +835,7 @@
     line-height: normal;
     white-space: nowrap;
     direction: rtl;
-    font-family:'Tajawal'
+    font-family: 'Tajawal'
 }
 
 .screen .pothole-img {
@@ -873,7 +875,7 @@
     font-family: 'Tajawal', Arial, sans-serif;
 }
 
-.table-container thead{
+.table-container thead {
     background-color: #dde9cd;
     height: 3rem;
 }
@@ -882,25 +884,29 @@
     font-family: 'Tajawal';
     src: url('Tajawal-Light.ttf') format('truetype');
     /* Add additional font files if you have different font weights or styles */
-  }
+}
 
-.table-container th{
+.table-container th {
     font-family: 'Tajawal', Arial, sans-serif;
     font-size: 20px;
     color: #5a8b59;
     border-radius: 8px;
-    border: none; 
+    border: none;
     font-weight: bold;
 }
 
-.table-container tr{
+.table-container tr {
     height: 42px;
     font-size: 17px
 }
 
 .table-container .tbody tr:hover {
-    background-color: #f2f2f2; /* Replace with your desired gray color */
-  }
+    background-color: #f2f2f2;
+    /* Replace with your desired gray color */
+}
+
+
+
 
 
 
@@ -924,39 +930,39 @@
 }
 
 
-  /* image boxes */
-  .screen .images{
+
+
+/* image boxes */
+
+.screen .images-container {
     position: absolute;
     width: 1196px;
-    height:max-content;
-    top: 320px;
-    left: 43px;
-    border-radius: 10px;
-
-  }
-  .screen .Image-box{
-  position: absolute;
-    width: max-content;
     height: max-content;
-    top: 0;
-    left: 0;
-   background-color: white;
-    border-radius: 10px;
-  }
- 
-    .screen .image-box .box {
-    position: fixed;
-    width: 241px;
-    height: 223px;
-    top: 0;
-    left: 0;
-    border-radius: 8px;
-    }
-    .screen .image-box .inner-image {
+    top: 348px;
+    left: 43px;
+}
+
+.screen .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 15px 15px;
+    padding: 5px;
+    width: 1185px;
+}
+
+.screen .Image-box {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.screen .inner-image {
     position: absolute;
-    width: 218px;
-    height: 204px;
+    width: 160px;
+    height: 160px;
     top: 10px;
-    left: 11px;
-    object-fit: cover;
-    }
+    left: 10px;
+    object-fit: contain;
+}
