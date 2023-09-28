@@ -41,7 +41,7 @@
                     document.getElementById('concrete').innerHTML = snapshot.val().ToatalOfConcreteBarrier + ' صبة';
                     document.getElementById('potholes').innerHTML = snapshot.val().ToatalOfPothole + ' حفرة';
                     document.getElementById('sand').innerHTML = snapshot.val().ToatalOfSandOnRoad + ' رمل على الطريق';
-                    //album(neighborhood);
+                    album(neighborhood);
                 } else {
 
                     alert('No data found');
@@ -181,21 +181,16 @@
         
                 const url = urlSnapshot.val();
         
-                const box = document.createElement("div");
-                box.classList.add("box");
-        
                 const imgBox = document.createElement("div");
-                imgBox.classList.add("box")
+                imgBox.classList.add("Image-box")
         
                 const image = document.createElement("img");
                 image.src = url;
                 image.alt = "Visual Pollution Image";
                 image.classList.add("inner-image");
         
-                imgBox.appendChild(box);
-                box.appendChild(image);
-                imgBox.classList.add("Image-box");
-                document.querySelector(".images").appendChild(imgBox);
+                imgBox.appendChild(image);
+                document.querySelector(".grid-container").appendChild(imgBox);
              
             });
           } else {
