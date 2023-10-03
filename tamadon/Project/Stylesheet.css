@@ -6,6 +6,8 @@ html, body {
     overflow: hidden; /* This prevents scrollbars */
 }
 
+
+
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
     width: 7px;
