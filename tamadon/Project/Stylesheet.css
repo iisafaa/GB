@@ -467,11 +467,12 @@
 .screen .centerbar {
     position: absolute;
     width: 1196px;
-    height: 797px;
+    height: max-content;
     top: 0;
     left: 0;
     background-color: #ffffff;
     border-radius: 10px;
+    padding-bottom: 30px;
 }
 
 
@@ -926,6 +927,7 @@
     gap: 15px 15px;
     padding: 5px;
     width: 1185px;
+    height: 500px;
 
 }
 
@@ -944,8 +946,7 @@
     border-color: transparent;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
     text-align: center;
-
-    
+  
 }
 
 .chart-title {
@@ -959,4 +960,5 @@
 .chartjs-render-monitor {
     background-color: white;
     border-radius: 5px;
+    height: 500px;
 }
