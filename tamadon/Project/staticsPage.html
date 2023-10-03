@@ -8,15 +8,16 @@
     <title>احصائيات</title>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
-
-    <script type="module">
+  <!-- Include Chart.js library --> 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+  
+  <script type="module">
         // Import the function from the module script
-        import { pollutionPercentage } from './districtsPage.js';
+        import {staticPage } from './staticscript.js';
 
         document.addEventListener('DOMContentLoaded', function () {
             // Call the imported function
-            pollutionPercentage();
+            staticPage();
         });
     </script>
     
@@ -27,14 +28,20 @@
 
         <div class="div">
             <div class="between-erea-rec">
-                <div class="text-wrapper">مقارنة بين المناطق</div>
-                <div class="smallrec" , style=" top: 31px; left: 351px;"></div>
-                    
-            </div>
-            <div class="between-erea-rec-2">
-                <div class="text-wrapper-2">مقارنة بين المناطق</div>
-                <div class="smallrec" , style="top: 30px;
-                    left: 788px;"></div>
+                <div class="chart-container">
+                    <div class="chart-title">عدد الصبات في مناطق مكة المكرمة</div>
+                    <canvas id="myChart1" class="chart-canvas"></canvas>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-title">عدد الحفر في مناطق مكة المكرمة</div>
+                    <canvas id="myChart2" class="chart-canvas"></canvas>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-title">عدد الرمل على الطريق في مناطق مكة المكرمة</div>
+                    <canvas id="myChart3" class="chart-canvas"></canvas>
+                </div>
             </div>
 
             <div class="erea-state">
@@ -91,8 +98,7 @@
     </div>
     </div>
 
-    <script src="districtsPage.js" type="module"></script>
-
+    <script src="staticscript.js" type="module"></script>
 </body>
 
 </html>

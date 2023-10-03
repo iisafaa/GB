@@ -318,3 +318,82 @@
     
     
 
+      export async function staticPage() {
+        const dbRef = ref(db);
+        
+    
+        try {
+          /*   await get(child(dbRef, "MAKKAH"));
+            var pollution = [];
+    
+            snapshot.forEach(childSnapshot => {
+                pollution.push(childSnapshot.val());
+            });
+    */      const snapshot = await get(child(dbref, "MAKKAH/"));
+             const pollution = [];
+    
+           snapshot.forEach(childSnapshot => {
+           pollution.push(childSnapshot.val());
+        
+    });
+    
+    var labList1=[];
+    var dataList1=[];
+    var dataList2=[];
+    var dataList3=[];
+    var backgroundColorlist=['rgba(255, 99, 132, 0.2)', 
+                     'rgba(54, 162, 235, 0.2)', 
+                     'rgba(255, 206, 86, 0.2)', 
+                     'rgba(75, 192, 192, 0.2)', 
+                     'rgba(153, 102, 255, 0.2)' ];
+    var borderColorlist=['rgba(255, 99, 132, 1)', 
+                     'rgba(54, 162, 235, 1)', 
+                     'rgba(255, 206, 86, 1)', 
+                     'rgba(75, 192, 192, 1)', 
+                     'rgba(153, 102, 255, 1)' ];
+    
+    
+    for(var i=0; i<pollution.length; i++){
+     labList1.push(pollution[i].neighborhood)
+     dataList1.push(pollution[i].ToatalOfConcreteBarrier)
+     dataList2.push(pollution[i].ToatalOfPothole)
+     dataList2.push(pollution[i].ToatalOfSandOnRoad)
+     }
+    
+    // Data for the chart (myChart1)
+    var data1 = {
+        labels: labList1,
+        datasets: [{
+            data: dataList1,
+            backgroundColor: backgroundColorlist,
+            borderColor: borderColorlist,
+            borderWidth: 1
+        }]
+    };
+    
+    const config1 = {
+        type: 'bar',
+        data: data1,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    };
+    
+    // Get the canvas element
+    var ctx1 = document.getElementById('myChart1').getContext('2d');
+    const chart1 = new Chart(ctx1, config1);
+    
+    console.log("Pollution data:", pollution);
+    
+    
+    }
+    
+    catch (error) {
+        console.error(error);
+    }
+           
+    };
