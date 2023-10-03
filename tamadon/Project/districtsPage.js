@@ -7,13 +7,13 @@
     
     const firebaseConfig = {
         apiKey: "AIzaSyBZCozeeUfIW4DNaa08FJMjoQSgWgotmbI",
-        authDomain: "gradb-a7c23.firebaseapp.com",
-        databaseURL: "https://gradb-a7c23-default-rtdb.firebaseio.com",
-        projectId: "gradb-a7c23",
-        storageBucket: "gradb-a7c23.appspot.com",
-        messagingSenderId: "869500719030",
-        appId: "1:869500719030:web:df7226ffd89be363e4bb17",
-        measurementId: "G-CW1KF3Z7ZZ"
+    authDomain: "gradb-a7c23.firebaseapp.com",
+    databaseURL: "https://gradb-a7c23-default-rtdb.firebaseio.com",
+    projectId: "gradb-a7c23",
+    storageBucket: "gradb-a7c23.appspot.com",
+    messagingSenderId: "869500719030",
+    appId: "1:869500719030:web:df7226ffd89be363e4bb17",
+    measurementId: "G-CW1KF3Z7ZZ"
     };
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
