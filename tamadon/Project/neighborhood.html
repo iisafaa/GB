@@ -17,7 +17,7 @@
         // Import the function from the module script
         import { neighborhoodPage, genratePDF } from './districtsPage.js';
 
-        b.addEventListener("click", function () {genratePDF();});
+        b.addEventListener("click", function () { genratePDF(); });
 
         document.addEventListener('DOMContentLoaded', function () {
             // Call the imported function
@@ -41,9 +41,10 @@
                         <div class="text-wrapper-6" id="neigbour"></div>
 
                         <div class="button-container">
-                            <button id="b"> <img src="downloads.png" width="20" height="20" alt="Image Description"></button>
+                            <button id="b"> <img src="downloads.png" width="20" height="20"
+                                    alt="Image Description"></button>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>
@@ -103,17 +104,15 @@
                     <div class="Image-box" style="display: none;">
                         <img class="inner-image" src=" " />
                     </div>
-                
+
                 </div>
-                <div> 
-            </div>
+
             </div>
 
-            
-        
-    </div>
-      
-    </div>
+
+
+        </div>
+
     </div>
 
     <script src="districtsPage.js" type="module"></script>
