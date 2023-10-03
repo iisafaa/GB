@@ -8,47 +8,62 @@
     <title>احصائيات</title>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
-  <!-- Include Chart.js library --> 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
-  
-  <script type="module">
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module">
         // Import the function from the module script
-        import {staticPage } from './staticscript.js';
+        import { staticPage } from './staticscript.js';
 
         document.addEventListener('DOMContentLoaded', function () {
             // Call the imported function
             staticPage();
         });
+
+        // Import the function from the module script
+        import { pollutionPercentage} from './districtsPage.js';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Call the imported function
+            pollutionPercentage();
+        });
+
     </script>
-    
+
 </head>
 
 <body>
     <div class="screen">
 
         <div class="div">
+
             <div class="between-erea-rec">
-                <div class="chart-container">
-                    <div class="chart-title">عدد الصبات في مناطق مكة المكرمة</div>
-                    <canvas id="myChart1" class="chart-canvas"></canvas>
+                <div class="chart-grid">
+                    <div class="chart-container">
+                        <div class="chart-title">عدد الصبات في مناطق مكة المكرمة</div>
+                        <canvas id="myChart1" class="chart-canvas"></canvas>
+                    </div>
+
+                    <div class="chart-container">
+                        <div class="chart-title">عدد الحفر في مناطق مكة المكرمة</div>
+                        <canvas id="myChart2" class="chart-canvas"></canvas>
+                    </div>
+
+                    <div class="chart-container">
+                        <div class="chart-title">عدد الرمل على الطريق في مناطق مكة المكرمة</div>
+                        <canvas id="myChart3" class="chart-canvas"></canvas>
+                    </div>
                 </div>
-                
-                <div class="chart-container">
-                    <div class="chart-title">عدد الحفر في مناطق مكة المكرمة</div>
-                    <canvas id="myChart2" class="chart-canvas"></canvas>
-                </div>
-                
-                <div class="chart-container">
-                    <div class="chart-title">عدد الرمل على الطريق في مناطق مكة المكرمة</div>
-                    <canvas id="myChart3" class="chart-canvas"></canvas>
-                </div>
+
             </div>
+
+
 
             <div class="erea-state">
 
-               <!-- <div class="statetext">اجمالي التلوث لجميع المناطق</div>
+                <!-- <div class="statetext">اجمالي التلوث لجميع المناطق</div>
                 <div class="smallrec" , style="top: 20px; left: 1182px;"></div>-->
-                    
+
 
                 <div class="text-wrapper-3">اجمالي الحفر</div>
                 <div class="text-wrapper-4" id="statPotholes"></div>
@@ -81,7 +96,9 @@
         <div class="sidebar"><!-- Side bar  -->
             <div class="overlap-3">
                 <img class="tammadon" src="Tammadon.png" />
-                <div style="width: 249px; height: 0px; left: 15px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid"></div>
+                <div
+                    style="width: 249px; height: 0px; left: 15px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
+                </div>
             </div>
             <button onclick="window.location.href='staticsPage.html';" , class="Side-button1">
                 <span class="text-wrapper-12" style="left: 50px;">احصائيات</span>
@@ -99,6 +116,7 @@
     </div>
 
     <script src="staticscript.js" type="module"></script>
+    <script src="districtsPage.js" type="module"></script>
 </body>
 
 </html>

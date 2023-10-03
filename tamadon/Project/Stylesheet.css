@@ -1,12 +1,3 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* This prevents scrollbars */
-}
-
-
 
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
@@ -42,16 +33,6 @@ html, body {
     position: relative;
 }
 
-.screen .between-erea-rec {
-    width: 370px;
-    left: 869px;
-    position: absolute;
-    height: 522px;
-    top: 357px;
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-
 .screen .text-wrapper {
     top: 30px;
     left: 190px;
@@ -72,16 +53,6 @@ html, body {
     width: 7px;
     height: 34px;
     background-color: #5a8b59;
-}
-
-.screen .between-erea-rec-2 {
-    width: 812px;
-    left: 45px;
-    position: absolute;
-    height: 522px;
-    top: 357px;
-    background-color: #ffffff;
-    border-radius: 8px;
 }
 
 .screen .text-wrapper-2 {
@@ -625,12 +596,13 @@ html, body {
 /* Style for the button and its container */
 .screen .button-container {
     float: right;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .screen button#b {
-    background-color: transparent; 
-    border: none; /* Remove border */
+    background-color: transparent;
+    border: none;
+    /* Remove border */
     cursor: pointer;
 }
 
@@ -935,31 +907,56 @@ html, body {
     object-fit: contain;
 }
 
-<<<<<<< HEAD
+/*           Charts                */
 
-        /* Apply CSS styles to the chart container */
-        .chart-container {
-            display: inline-block;
-            width: 500; /* Adjust the width and margin as needed */
-            margin-right: 10px; /* Adjust the margin between charts */
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 10px; 
-           /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
-        }        
 
-        .chart-title {
-            font-size: 15px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+.screen .between-erea-rec {
+    position: absolute;
+    width: 1196px;
+    height: max-content;
+    top: 348px;
+    left: 43px;
+}
 
-        /* Apply CSS styles to chart elements */
-        .chartjs-render-monitor {
-            background-color: white;
-            border-radius: 5px;
-        }
+
+
+.chart-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px 15px;
+    padding: 5px;
+    width: 1185px;
+
+}
+
+
+/* Apply CSS styles to the chart container */
+.chart-container {
+    display: inline-block;
+    width: 500;
+    /* Adjust the width and margin as needed */
+    margin-right: 10px;
+    /* Adjust the margin between charts */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
+    text-align: center;
+
     
-=======
->>>>>>> 81cf84c7a4b539f983426107f19ad5fc9ff7095a
+}
+
+.chart-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+/* Apply CSS styles to chart elements */
+.chartjs-render-monitor {
+    background-color: white;
+    border-radius: 5px;
+}
