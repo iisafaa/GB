@@ -54,6 +54,125 @@
             });
     }
 
+
+
+    export async function genratePDF(){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const neighborhood = urlParams.get('neighborhood');
+        
+        const dbref = ref(db);
+
+        await get(child(dbref, "MAKKAH/" + neighborhood))
+            .then((snapshot) => {
+                if (snapshot.exists()) {
+                           // alert(snapshot.val().neighborhood + ' مكة');
+                
+
+                    const doc = new jsPDF({
+                        orientation: "p", //set orientation
+                        unit: "pt", //set unit for document
+                        format: "letter" //set document standard
+                      });
+                      const btn = document.getElementById("b");
+                      //const input = document.querySelector("input");
+                      const sand = 'Toatal of sand of road',
+                            potholes = 'Toatal of potholes',
+                            Barrier = 'Toatal of concrete barrier',
+                            Dat  = 'Date added';
+                            //date = new Date();
+                      const sizes = {
+                        xs: 10, 
+                        sm : 14, 
+                        p: 16, 
+                        h3: 18, 
+                        h2: 20, 
+                        h1: 22
+                      };
+                      const fonts = {
+                        times: 'Times', 
+                        helvetica: 'Helvetica'
+                      };
+                      
+                      
+                      const margin = 0.5; // inches on a 8.5 x 11 inch sheet.
+                      const verticalOffset = margin;
+                      var columns = [
+                          {title: "Neighborhood name", dataKey: "col1"},
+                          {title: snapshot.val().neighborhood, dataKey: "col2"}, 
+                          {title: "Pollution Rate", dataKey: "col3"},
+                          {title: snapshot.val().PollutionRate, dataKey: "col4"}
+                      ];
+                      var rows = [
+                        {
+                          "col1": Barrier, 
+                          "col2": snapshot.val().ToatalOfConcreteBarrier, 
+                          "col3": potholes, 
+                          "col4": snapshot.val().ToatalOfPothole
+                        },
+                          {
+                          "col1": sand, 
+                          "col2": snapshot.val().ToatalOfSandOnRoad, 
+                          "col3": Dat, 
+                          "col4": snapshot.val().DateAdded
+                        }
+                      ];
+                      
+                      
+                      
+                      btn.addEventListener("click", () => {
+                        alert(snapshot.val().neighborhood + ' hgh');
+                        //const name = input.value;
+                        doc.autoTable(columns, rows, {
+                            styles: {
+                              fillColor: [146,220,135],
+                              lineColor: 240, 
+                              lineWidth: 1,
+                            },
+                            columnStyles: {
+                              col1: {fillColor: false},
+                              col2: {fillColor: false},
+                              col3: {fillColor: false},
+                              col4: {fillColor: false},
+                              col5: {fillColor: false},
+                              col6: {fillColor: false},        
+                            },
+                            margin: {top: 260},
+                            addPageContent: function(data) {
+                              
+                              doc.setTextColor(0,102,51);
+                              doc.setFont("times");
+                              doc.setFontSize(14);
+                              doc.text("Visual pollution report for the neighborhood", 170, 110);
+                              doc.text("of Makkah Al-Mukarramah", 210, 135);
+                              doc.text("This report was issued by the Ministry of Municipality, Kingdom of Saudi Arabia", 70, 395);
+                      
+                              doc.text("Name:", 55, 700);
+                              doc.text("_________________", 55, 715);
+                      
+                              doc.text("Signature:", 448, 700);
+                              doc.text("_________________", 448, 715);
+                      
+                            }
+                        });
+                      
+                        doc.save(`التلوث البصري.pdf`);
+                      });  
+                      
+                      
+                } else {
+
+                    alert('No data found');
+                    return;
+                }
+            })
+            .catch((error) => {
+                alert(error);
+            });
+    }
+
+
+
     function addItemToTable(dist, date, prcnt){
         let trow = document.createElement('tr');
         let td1 = document.createElement('td');
