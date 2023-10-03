@@ -393,7 +393,7 @@ html, body {
     width: 92px;
     height: 81px;
     top: 18px;
-    left: 154px;
+    left: 90px;
     /*object-fit: cover;*/
 }
 
@@ -608,7 +608,7 @@ html, body {
     width: 179px;
     height: 26px;
     top: 2px;
-    left: 25px;
+    right: 45px;
     /*font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #5a8b59;
@@ -621,67 +621,25 @@ html, body {
     font-family: 'Tajawal'
 }
 
-.screen .down-arrow {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 0;
-    left: 40px;
+
+/* Style for the button and its container */
+.screen .button-container {
+    float: right;
+    background-color: transparent; 
 }
 
-
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
+.screen button#b {
+    background-color: transparent; 
+    border: none; /* Remove border */
+    cursor: pointer;
 }
 
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    /* Important for vertical align on mobile phones */
-    margin: 0;
-    /* Important for vertical align on mobile phones */
+/* Optional: Style the button image */
+.screen button#b img {
+    width: 20px;
+    height: 20px;
+    alt: "Image Description";
 }
-
-
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 
 .screen .concret-barrier-box {
     position: absolute;
@@ -977,6 +935,7 @@ html, body {
     object-fit: contain;
 }
 
+<<<<<<< HEAD
 
         /* Apply CSS styles to the chart container */
         .chart-container {
@@ -1002,3 +961,5 @@ html, body {
             border-radius: 5px;
         }
     
+=======
+>>>>>>> 81cf84c7a4b539f983426107f19ad5fc9ff7095a

@@ -55,6 +55,8 @@
     }
 
 
+    
+
 
     export async function genratePDF(){
         const queryString = window.location.search;
@@ -66,7 +68,7 @@
         await get(child(dbref, "MAKKAH/" + neighborhood))
             .then((snapshot) => {
                 if (snapshot.exists()) {
-                           // alert(snapshot.val().neighborhood + ' مكة');
+                           
                 
 
                     const doc = new jsPDF({
@@ -74,7 +76,8 @@
                         unit: "pt", //set unit for document
                         format: "letter" //set document standard
                       });
-                      const btn = document.getElementById("b");
+                      
+                      var btn = document.getElementById("b");
                       //const input = document.querySelector("input");
                       const sand = 'Toatal of sand of road',
                             potholes = 'Toatal of potholes',
@@ -120,8 +123,7 @@
                       
                       
                       
-                      btn.addEventListener("click", () => {
-                        alert(snapshot.val().neighborhood + ' hgh');
+                      //btn.addEventListener("click", () => {
                         //const name = input.value;
                         doc.autoTable(columns, rows, {
                             styles: {
@@ -139,7 +141,6 @@
                             },
                             margin: {top: 260},
                             addPageContent: function(data) {
-                              
                               doc.setTextColor(0,102,51);
                               doc.setFont("times");
                               doc.setFontSize(14);
@@ -155,9 +156,10 @@
                       
                             }
                         });
-                      
+                        
                         doc.save(`التلوث البصري.pdf`);
-                      });  
+                        
+                     // });  
                       
                       
                 } else {
