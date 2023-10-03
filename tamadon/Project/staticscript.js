@@ -63,7 +63,7 @@ for(var i=0; i<pollution.length; i++){
  labList1.push(pollution[i].neighborhood)
  dataList1.push(pollution[i].ToatalOfConcreteBarrier)
  dataList2.push(pollution[i].ToatalOfPothole)
- dataList2.push(pollution[i].ToatalOfSandOnRoad)
+ dataList3.push(pollution[i].ToatalOfSandOnRoad)
  }
 
 // Data for the chart (myChart1)
@@ -97,61 +97,59 @@ const chart1 = new Chart(ctx1, config1);
 
 
 
-  
-        // Data for the chart (myChart2)
-        var data2 = {
-            labels: labList1,
-            datasets: [{ 
-                data: dataList2, 
-                backgroundColor: backgroundColorlist,                                      
-                borderColor:borderColorlist, 
-                borderWidth: 1 
-            }] 
-        }; 
- 
-        const config2 = {
-            type: 'bar',
-            data: data2,
-            options: {
-            scales: {
-                y: {
-                beginAtZero: true
-            }
-        }
-    }
+var data2 = {
+    labels: labList1,
+    datasets: [{
+        data: dataList2,
+        backgroundColor: backgroundColorlist,
+        borderColor: borderColorlist,
+        borderWidth: 1
+    }]
 };
- 
-        // Get the canvas element 
-        var ctx2 = document.getElementById('myChart2').getContext('2d'); 
-        const chart2 = new Chart(ctx2, config2);
-       
 
-// Data for the chart (myChart2)
-var data3 = {
-            labels: labList1,
-            datasets: [{ 
-                data: dataList3, 
-                backgroundColor: backgroundColorlist,                                      
-                borderColor:borderColorlist, 
-                borderWidth: 1 
-            }] 
-        }; 
- 
-        const config3 = {
-            type: 'bar',
-            data: data3,
-            options: {
-            scales: {
-                y: {
+const config2 = {
+    type: 'bar',
+    data: data2,
+    options: {
+        scales: {
+            y: {
                 beginAtZero: true
             }
         }
     }
 };
- 
-        // Get the canvas element 
-        var ctx3 = document.getElementById('myChart3').getContext('2d'); 
-        const chart3 = new Chart(ctx3, config3);
+
+// Get the canvas element
+var ctx2 = document.getElementById('myChart2').getContext('2d');
+const chart2 = new Chart(ctx2, config2);
+
+//------------------------chart#3--------------------------------------------->
+// Data for the chart (myChart3)
+var data3 = {
+    labels: labList1,
+    datasets: [{
+        data: dataList3,
+        backgroundColor: backgroundColorlist,
+        borderColor: borderColorlist,
+        borderWidth: 1
+    }]
+};
+
+const config3 = {
+    type: 'bar',
+    data: data3,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+};
+
+// Get the canvas element
+var ctx3 = document.getElementById('myChart3').getContext('2d');
+const chart3 = new Chart(ctx3, config3);
 
 
 }
