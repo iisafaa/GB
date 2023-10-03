@@ -83,11 +83,9 @@
     }
 
     export async  function FindData() {
-        console.log("Function called on page load");
-
         tbody.innerHTML = "";
         const totalPollution = await totalData();
-        // alert(typeof totalPollution, totalPollution);
+
         try {
         const snapshot = await get(child(dbref, "MAKKAH/"));
         if (snapshot.exists()) {
@@ -133,45 +131,41 @@
         }
     }
 
+    export async function pollutionPercentage(){
+        try {
+            const snapshot = await get(child(dbref, "MAKKAH/"));
+            let concrete = 0;
+            let potholes = 0;
+            let sand = 0;
+            if (snapshot.exists()) {
+            snapshot.forEach((childSnapshot) => {
+                concrete += childSnapshot.val().ToatalOfConcreteBarrier;
+                potholes += childSnapshot.val().ToatalOfPothole;
+                sand += childSnapshot.val().ToatalOfSandOnRoad;
+            });
 
-    // async function album(neighborhood){
-    //     const dbref = ref(db);
-    //     var index = 0;
-    //     await get(child(dbref, "MAKKAH/" + neighborhood + '/url')).then((snapshot) => {
-    //       if (snapshot.exists()) {
-    //         snapshot.forEach((childSnapshot) => {
-    //           crd.style.Display = "felx"; //to show the content of card class
+            // calculate the percentage of each pollution type
+            concrete = (concrete / await totalData() ) * 100 ;
+            potholes = (potholes / await totalData() ) * 100 ;
+            sand = (sand / await totalData() ) * 100 ;
 
-    //           const url = childSnapshot.val();
+            //assign values in the html page
+            document.getElementById('statPotholes').innerHTML = potholes.toFixed(2)+ '%';
+            document.getElementById('statSand').innerHTML = sand.toFixed(2)+ '%';
+            document.getElementById('statConcrete').innerHTML = concrete.toFixed(2)+ '%';
 
-    //           const box = document.createElement("div"); //create div element 
-    //           box.classList.add("box"); //adding class to div element
-
-    //           const imgBox = document.createElement("div"); //create div element 
-            
-    //           const Image = document.createElement("img"); //create img element
-    //           Image.src = url.index;
-    //           index++;
-    //           Image.alt = "Visual Pollution Image";
-              
-    //           imgBox.appendChild(box);
-    //           box.appendChild(Image); //the img child under the div element
-    //           imgBox.classList.add("Image-box"); //adding class to div element
-    //           document.querySelector(".images").appendChild(imgBox);
-    //         });
-    //       } else {
-    //         alert("No data found");
-    //       }
-    //     }).catch((error) => {
-    //       alert(error);
-    //     });
-    // }
-
+            } else {
+            alert('nothing found');
+            return 0;
+            }
+        } catch (error) {
+            alert(error);
+            return 0;
+        }
+    }
 
     async function album(neighborhood) {
-        const dbref = ref(db);
-        var index = 0;
-      
+
         try {
           const snapshot = await get(child(dbref, "MAKKAH/" + neighborhood + '/url'));
         

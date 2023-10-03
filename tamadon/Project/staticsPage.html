@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Stylesheet.css">
     <title>احصائيات</title>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
+
+    <script type="module">
+        // Import the function from the module script
+        import { pollutionPercentage } from './districtsPage.js';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Call the imported function
+            pollutionPercentage();
+        });
+    </script>
+    
 </head>
 
 <body>
@@ -30,16 +44,16 @@
                     
 
                 <div class="text-wrapper-3">اجمالي الحفر</div>
-                <div class="text-wrapper-4">30%</div>
+                <div class="text-wrapper-4" id="statPotholes"></div>
                 <div class="settings-wrapper"><img class="settings" src="patholes.png" /></div>
 
 
                 <div class="text-wrapper-66">اجمالي الصبات</div>
-                <div class="text-wrapper-5">30%</div>
+                <div class="text-wrapper-5" id="statSand"></div>
                 <div class="overlap"><img class="settings-check" src="concretebrair.png" /></div>
 
                 <div class="text-wrapper-8">اجمالي الرمل <br>على الطريق</div>
-                <div class="text-wrapper-7">30%</div>
+                <div class="text-wrapper-7" id="statConcrete"></div>
                 <div class="overlap-group"><img class="x" src="sand.png" /></div>
             </div>
         </div>
@@ -76,6 +90,9 @@
         </div>
     </div>
     </div>
+
+    <script src="districtsPage.js" type="module"></script>
+
 </body>
 
 </html>
