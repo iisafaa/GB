@@ -368,6 +368,7 @@
     /*object-fit: cover;*/
 }
 
+
 .screen .Side-button1 {
     position: relative;
     width: 230px;
@@ -452,6 +453,82 @@
     width: 28px;
     height: 28px;
 }
+
+
+
+.buttons{
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px 5px;
+    padding: 5px;
+    width: 249px;
+    height: 20px;
+    top: 790px;
+    
+}
+
+
+.screen .Side-button3 {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #ffffff;
+}
+
+.screen .Side-button3:hover {
+    background-color: #DDE9CD;
+    color: #ffffff;
+}
+.screen .ar {
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 195px;
+
+    color: #5b8b5a;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .Side-button4 {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #ffffff;
+}
+.screen .Side-button4:hover {
+    background-color: #DDE9CD;
+    color: #ffffff;
+}
+
+.screen .engl {
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 195px;
+
+    color: #5b8b5a;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 
 /*/////////////////search/////////////////////////////////////////////////////////////////////////////////////*/
 
