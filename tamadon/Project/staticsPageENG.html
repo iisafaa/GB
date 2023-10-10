@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="StylesheetENG.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <title>discrits</title>
+
+</head>
+
+<body>
+    <div class="screen">
+
+        <div class="div">
+
+            
+            <div class="between-erea-rec">
+                <div class="chart-container">
+                    <div class="chart-title">عدد الصبات في مناطق مكة المكرمة</div>
+                    <canvas id="myChart1" class="chart-canvas"></canvas>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-title">عدد الحفر في مناطق مكة المكرمة</div>
+                    <canvas id="myChart2" class="chart-canvas"></canvas>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-title">عدد الرمل على الطريق في مناطق مكة المكرمة</div>
+                    <canvas id="myChart3" class="chart-canvas"></canvas>
+                </div>
+            </div>
+            
+            <div class="erea-state">
+
+                <!-- <div class="statetext">اجمالي التلوث لجميع المناطق</div>
+                <div class="smallrec" , style="top: 20px; left: 1182px;"></div>-->
+
+
+                <div class="text-wrapper-3">patholes total</div>
+                <div class="text-wrapper-4" id="statPotholes"></div>
+                <div class="settings-wrapper"><img class="settings" src="images/patholes.png" /></div>
+
+
+                <div class="text-wrapper-66"> concrete brair</div>
+                <div class="text-wrapper-5" id="statSand"></div>
+                <div class="overlap"><img class="settings-check" src="images/concretebrair.png" /></div>
+
+                <div class="text-wrapper-8">sand on road</div>
+                <div class="text-wrapper-7" id="statConcrete"></div>
+                <div class="overlap-group"><img class="x" src="images/sand.png" /></div>
+            </div>
+        </div>
+
+
+
+
+
+            <!-- UP Bar  -->
+            <div class="upbar">
+                <div class="overlap-2">
+                    <div class="overlap-group-2">
+                        <div class="text-wrapper-10">أمانة العاصمة المقدسة</div>
+                        <div class="text-wrapper-11">مكة المكرمة</div>
+                    </div>
+                    <img class="makkah-logo" src="images/makkahLogo.png" />
+                    <div class="text-UP-bar">Makkah Region Statistics</div>
+                </div>
+            </div>
+
+            <!-- Side Bar  -->
+            <div class="sidebar">
+                <div class="overlap-3">
+                    <img class="tammadon" src="images/Tammadon.png" />
+                    <div
+                        style="width: 200px; height: 0px; left: 15px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
+                    </div>
+                </div>
+                <button onclick="window.location.href='staticsPageENG.html';" , class="Side-button1">
+                    <img src="images/num.png" alt="Image" class="chart">
+                    <span class="text-wrapper-12">statics</span>
+
+                </button>
+
+
+                <button onclick="window.location.href='discritsPageENG.html';" , class="Side-button2">
+                    <img src="images/discrits.png" alt="Image" class="element-plus">
+                    <span class="text-wrapper-13">discrits</span>
+
+                </button>
+
+                <div class="buttons">
+                    <button onclick="window.location.href='staticsPageENG.html';" , class="Side-button3">
+                        <span class="engl">English</span></button>
+                    <button onclick="window.location.href='staticsPage.html';" , class="Side-button4">
+                        <span class="ar">عربي</span></button>
+                </div>
+
+            </div>
+    </div>
+</body>
+</html>

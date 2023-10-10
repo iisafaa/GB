@@ -256,6 +256,8 @@
     font-family: 'Tajawal'
 }
 
+
+/* up bar */
 .screen .upbar {
     position: absolute;
     width: 1228px;
@@ -484,7 +486,7 @@
     background-color: #DDE9CD;
     color: #ffffff;
 }
-.screen .ar {
+.screen .engl {
     display: inline-block;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
@@ -499,6 +501,7 @@
     font-family: 'Tajawal'
 }
 
+
 .screen .Side-button4 {
     position: relative;
     width: 100px;
@@ -509,12 +512,14 @@
     justify-content: space-between;
     border: #ffffff;
 }
+
 .screen .Side-button4:hover {
     background-color: #DDE9CD;
     color: #ffffff;
 }
 
-.screen .engl {
+
+.screen .ar {
     display: inline-block;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;

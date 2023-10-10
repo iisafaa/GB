@@ -1,0 +1,656 @@
+
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5B8B5A;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5B8B5A;
+}
+
+.screen {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.screen .div {
+    background-color: #fafafa;
+    width: 1512px;
+    height: 982px;
+    position: relative;
+}
+
+/* up bar */
+.screen .upbar {
+    position: absolute;
+    width: 1228px;
+    height: 85px;
+    top: 26px;
+    left: 11px;
+}
+
+.screen .overlap-2 {
+    position: relative;
+    width: 1194px;
+    height: 85px;
+    left: 280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.screen .overlap-group-2 {
+    position: absolute;
+    width: 158px;
+    height: 55px;
+    top: 14px;
+    left: 917px;
+}
+
+.screen .text-wrapper-10 {
+    width: 158px;
+    height: 34px;
+    top: 0;
+    left: 0;
+    /* font-family: "Tajawal-Medium", Helvetica;*/
+    font-weight: 500;
+    color: #5b8b5a;
+    font-size: 14px;
+    letter-spacing: -0.32px;
+    line-height: 21.8px;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .text-wrapper-11 {
+    width: 84px;
+    height: 30px;
+    top: 25px;
+    left: 74px;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    color: #8bb454;
+    font-size: 12px;
+    letter-spacing: -0.28px;
+    line-height: 21.8px;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .makkah-logo {
+    position: absolute;
+    width: 75px;
+    height: 42px;
+    top: 15px;
+    left: 1090px;
+    object-fit: cover;
+}
+
+.screen .text-UP-bar {
+    position: absolute;
+    width: 298px;
+    height: 28px;
+    top: 30px;
+    font-family: "Tajawal-Bold", Helvetica;
+    font-weight: 700;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: -0.48px;
+    line-height: 21.8px;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+
+
+/*/////////////////////  side bar ////////////////////////////*/
+.screen .sidebar {
+    position: fixed;
+    width: 249px;
+    height: 982px;
+    top: 0;
+    left: 34px;
+    background-color: #ffffff;
+}
+
+.screen .overlap-3 {
+    position: absolute;
+    width: 249px;
+    height: 99px;
+    top: 20px;
+    left: 0;
+}
+
+.screen .tammadon {
+
+    position: absolute;
+    width: 92px;
+    height: 81px;
+    top: 18px;
+    left: 75px;
+    /*object-fit: cover;*/
+}
+
+
+.screen .Side-button1 {
+    position: relative;
+    width: 230px;
+    height: 49px;
+    background-color: var(--white);
+    top: 167px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #ffffff;
+}
+
+.screen .Side-button1:hover {
+    background-color: #DDE9CD;
+    color: #ffffff;
+}
+
+.screen .text-wrapper-12 {
+    display: inline-block;
+    /*font-family: "Tajawal-Medium", Helvetica;*/
+    top: 10px;
+    width: 180px;
+    font-weight: 500;
+    color: #5b8b5a;
+    font-size: 20px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal';
+
+
+}
+
+.screen .chart {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+}
+
+
+
+.screen .Side-button2 {
+    position: relative;
+    width: 230px;
+    height: 49px;
+    background-color: var(--white);
+    top: 167px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    /* Remove the border property */
+}
+
+.screen .Side-button2:hover {
+    background-color: #DDE9CD;
+    color: #ffffff;
+}
+
+.screen .text-wrapper-13 {
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 195px;
+    color: #5b8b5a;
+    font-size: 18px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .element-plus {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+}
+
+
+
+.buttons{
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px 5px;
+    padding: 5px;
+    width: 249px;
+    height: 20px;
+    top: 790px;
+    
+}
+
+
+.screen .Side-button3 {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #ffffff;
+}
+
+.screen .Side-button3:hover {
+    background-color: #DDE9CD;
+    color: #ffffff;
+}
+.screen .ar {
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 195px;
+    color: #5b8b5a;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .Side-button4 {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #ffffff;
+}
+.screen .Side-button4:hover {
+    background-color: #DDE9CD;
+    color: #ffffff;
+}
+
+.screen .engl {
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 195px;
+    color: #5b8b5a;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+
+/*/////////////////search/////////////////////////////////////////////////////////////////////////////////////*/
+
+.screen .overlappp {
+    position: absolute;
+    width: 1196px;
+    height: 797px;
+    top: 148px;
+    left: 290px;
+    border-radius: 10px;
+}
+
+.screen .centerbar {
+    position: absolute;
+    width: 1196px;
+    height: max-content;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+
+.screen .searchbar {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 870px;
+    top: 62px;
+
+}
+
+.screen form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    margin: 0 0 30px;
+}
+
+.screen form.search {
+    border: none;
+    padding: 0;
+}
+
+.screen input.search {
+
+    width: 297px;
+    height: 43px;
+    position: absolute;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #d9d9d9;
+
+    padding: 9px 4px 9px 40px;
+    background: transparent url("search-icon.png") no-repeat 13px center;
+    text-align: right;
+
+}
+
+
+
+
+.screen .button-filter {
+    position: absolute;
+    width: 86px;
+    height: 43px;
+    top: 62px;
+    left: 763px;
+    background-color: #dde9cd;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.screen .button-filter:hover {
+    background-color: #bcf2bc;
+    ;
+    color: #dde9cd;
+
+}
+
+
+.screen .text-wrapper200 {
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    top: 10px;
+    left: 13px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .filter-search {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    left: 46px;
+}
+
+
+/*////////////////////////////////////////////////////*/
+
+.screen .overlap- {
+    position: absolute;
+    width: 204px;
+    height: 32px;
+    top: 26px;
+    left: 933px;
+}
+
+.screen .text-wrapper-6 {
+    width: 179px;
+    height: 26px;
+    top: 2px;
+    right: 45px;
+    /*font-family: "Tajawal-Medium", Helvetica;*/
+    font-weight: 500;
+    color: #5a8b59;
+    font-size: 22px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+
+/* erea state * /
+
+
+/* erea state box */
+.screen .erea-state {
+    position: absolute;
+    width: 1194px;
+    height: 190px;
+    top: 135px;
+    left: 285px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.screen .line {
+    width: 1px;
+    height: 176px;
+    top: 49px;
+    left: 812px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.screen .img {
+    width: 1px;
+    height: 176px;
+    top: 49px;
+    left: 396px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.screen .text-wrapper-3 {
+    top: 60px;
+    left: 85px;
+    /* font-family: "Tajawal-Medium", Helvetica;*/
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .text-wrapper-4 {
+    top: 110px;
+    left: 140px;
+    position: absolute;
+    /* font-family: "Inter-Bold", Helvetica;*/
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-family: 'Tajawal'
+}
+
+.screen .text-wrapper-5 {
+    top: 110px;
+    left: 985px;
+    position: absolute;
+    /* font-family: "Inter-Bold", Helvetica;*/
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-family: 'Tajawal'
+}
+
+.screen .text-wrapper-66 {
+    top: 60px;
+    left: 910px;
+    /* font-family: "Tajawal-Medium", Helvetica;*/
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .overlap {
+    position: absolute;
+    width: 109px;
+    height: 109px;
+    top: 40px;
+    left: 1043px;
+    background-image: url(ell.png);
+    background-size: 100% 100%;
+}
+
+.screen .settings-check {
+    height: 90px;
+    top: 10px;
+    left: 12px;
+    position: absolute;
+    width: 90px;
+}
+
+.screen .text-wrapper-7 {
+    top: 115px;
+    left: 560px;
+    position: absolute;
+    /* font-family: "Inter-Bold", Helvetica;*/
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-family: 'Tajawal'
+}
+
+.screen .text-wrapper-8 {
+    top: 50px;
+    left: 500px;
+    /* font-family: "Tajawal-Medium", Helvetica;*/
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .overlap-group {
+    position: absolute;
+    width: 109px;
+    height: 109px;
+    top: 40px;
+    left: 620px;
+    background-image: url(ell.png);
+    background-size: 100% 100%;
+
+}
+
+.screen .x {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 13px;
+}
+
+.screen .settings-wrapper {
+    position: absolute;
+    width: 109px;
+    height: 109px;
+    top: 40px;
+    left: 200px;
+    background-image: url(ell.png);
+    background-size: 100%;
+
+}
+
+.screen .settings {
+    height: 75px;
+    top: 10px;
+    left: 15px;
+    position: absolute;
+    width: 75px;
+}
+
+.screen .statetext {
+    top: 22px;
+    left: 1051px;
+    /* font-family: "Inter-Bold", Helvetica;*/
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+
+.screen .between-erea-rec {
+    position: absolute;
+    width: 1196px;
+    height: max-content;
+    top: 348px;
+    left: 285px;
+}
+
+
+
+.chart-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px 15px;
+    padding: 5px;
+    width: 1185px;
+    height: 500px;
+
+}
+
+
