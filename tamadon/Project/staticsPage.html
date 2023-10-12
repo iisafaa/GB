@@ -4,8 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Stylesheet.css">
-    <title>احصائيات</title>
+
+    <title data-lang="title">احصائيات</title>
+
+    
+    <link id="eng-stylesheet" rel="stylesheet" href="eng-stylsheet.css">
+    <link id="ar-stylesheet" rel="stylesheet" href="ar-stylsheet.css">
+
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
     <!-- Include Chart.js library -->
@@ -39,17 +44,17 @@
 
             <div class="between-erea-rec">
                 <div class="chart-container">
-                    <div class="chart-title">عدد الصبات في مناطق مكة المكرمة</div>
+                    <div class="chart-title" data-lang="total_concrete-makkah" >عدد الصبات في مناطق مكة المكرمة</div>
                     <canvas id="myChart1" class="chart-canvas"></canvas>
                 </div>
                 
                 <div class="chart-container">
-                    <div class="chart-title">عدد الحفر في مناطق مكة المكرمة</div>
+                    <div class="chart-title" data-lang="total_patholes-makkah">عدد الحفر في مناطق مكة المكرمة</div>
                     <canvas id="myChart2" class="chart-canvas"></canvas>
                 </div>
                 
                 <div class="chart-container">
-                    <div class="chart-title">عدد الرمل على الطريق في مناطق مكة المكرمة</div>
+                    <div class="chart-title" data-lang="total_sand-makkah" >عدد الرمل على الطريق في مناطق مكة المكرمة</div>
                     <canvas id="myChart3" class="chart-canvas"></canvas>
                 </div>
             </div>
@@ -60,17 +65,17 @@
                 <div class="smallrec" , style="top: 20px; left: 1182px;"></div>-->
 
 
-                <div class="text-wrapper-3">اجمالي الحفر</div>
+                <div class="text-wrapper-3" data-lang="total_potholes">اجمالي الحفر</div>
                 <div class="text-wrapper-4" id="statPotholes"></div>
                 <div class="settings-wrapper"><img class="settings" src="images/patholes.png" /></div>
 
 
-                <div class="text-wrapper-66">اجمالي الصبات</div>
-                <div class="text-wrapper-5" id="statSand"></div>
+                <div class="text-wrapper-66" data-lang="total_concrete">اجمالي الصبات</div>
+                <div class="text-wrapper-5" id="statConcrete" ></div>
                 <div class="overlap"><img class="settings-check" src="images/concretebrair.png" /></div>
 
-                <div class="text-wrapper-8">اجمالي الرمل <br>على الطريق</div>
-                <div class="text-wrapper-7" id="statConcrete"></div>
+                <div class="text-wrapper-8" data-lang="total_sand">اجمالي الرمل <br>على الطريق</div>
+                <div class="text-wrapper-7" id="statSand"></div>
                 <div class="overlap-group"><img class="x" src="images/sand.png" /></div>
             </div>
         </div>
@@ -82,7 +87,7 @@
                     <div class="text-wrapper-11">مكة المكرمة</div>
                 </div>
                 <img class="makkah-logo" src="images/makkahLogo.png" />
-                <div class="text-UP-bar">احصائيات منطقة مكة المكرمة</div>
+                <div class="text-UP-bar" data-lang="makkah-statics">احصائيات منطقة مكة المكرمة</div>
             </div>
         </div>
 
@@ -98,23 +103,26 @@
             </div>
 
             <button onclick="window.location.href='staticsPage.html';" , class="Side-button1">
-                <span class="text-wrapper-12" style="left: 50px;">احصائيات</span>
+                <span data-lang="statics" class="text-wrapper-12" style="left: 50px;">احصائيات</span>
                 <img src="images/num.png" alt="Image" class="chart">
             </button>
 
 
             <button onclick="window.location.href='discritsPage.html';" , class="Side-button2">
-                <span class="text-wrapper-13">الأحياء</span>
+                <span class="text-wrapper-13" data-lang="district" >الأحياء</span>
                 <img src="images/discrits.png" alt="Image" class="element-plus">
             </button>
 
+
+
             <div class="buttons">
-                <button onclick="window.location.href='staticsPageENG.html';" , class="Side-button3">
+                <button value="english" , id="eng" , class="Side-button3">
                     <span class="engl">English</span></button>
-                <button onclick="window.location.href='staticsPage.html';" , class="Side-button4">
+                <button value="arabic" , id="ar" , class="Side-button4">
                     <span class="ar">عربي</span></button>
             </div>
 
+            
         </div>
 
     </div>
@@ -124,6 +132,7 @@
 
     <script src="staticscript.js" type="module"></script>
     <script src="districtsPage.js" type="module"></script>
+    <script src="languages.js"></script>
 </body>
 
 </html>

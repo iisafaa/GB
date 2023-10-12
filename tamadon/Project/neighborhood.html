@@ -4,8 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Stylesheet.css">
+
     <title>منطقة معينة</title>
+
+
+    <link id="eng-stylesheet" rel="stylesheet" href="eng-stylsheet.css">
+    <link id="ar-stylesheet" rel="stylesheet" href="ar-stylsheet.css">
+
+
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
@@ -23,7 +29,7 @@
             // Call the imported function
             neighborhoodPage();
         });
-        
+
     </script>
 
 </head>
@@ -57,16 +63,26 @@
                         style="width: 249px; height: 0px; left: 15px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
                     </div>
                 </div>
+
                 <button onclick="window.location.href='staticsPage.html';" , class="Side-button1">
-                    <span class="text-wrapper-12">احصائيات</span>
+                    <span class="text-wrapper-12" data-lang="statics" style="left: 50px;">احصائيات</span>
                     <img src="images/num.png" alt="Image" class="chart">
                 </button>
-
-
+    
+    
                 <button onclick="window.location.href='discritsPage.html';" , class="Side-button2">
-                    <span class="text-wrapper-13">الأحياء</span>
+                    <span class="text-wrapper-13" data-lang="district" >الأحياء</span>
                     <img src="images/discrits.png" alt="Image" class="element-plus">
                 </button>
+    
+    
+    
+                <div class="buttons">
+                    <button value="english" , id="eng" , class="Side-button3">
+                        <span class="engl">English</span></button>
+                    <button value="arabic" , id="ar" , class="Side-button4">
+                        <span class="ar">عربي</span></button>
+                </div>
 
             </div>
 
@@ -91,12 +107,7 @@
                     </div>
 
                 </div>
-
             </div>
-
-
-
-
 
             <!-- images -->
             <div class="images-container">
@@ -105,18 +116,16 @@
                     <div class="Image-box" style="display: none;">
                         <img class="inner-image" src=" " />
                     </div>
-
                 </div>
-
             </div>
-
-
 
         </div>
 
     </div>
 
     <script src="districtsPage.js" type="module"></script>
+    <script src="languages.js"></script>
+
 </body>
 
 </html>
