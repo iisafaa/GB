@@ -26,7 +26,13 @@ function changeLanguage(language) {
     arabicStylesheet.disabled = true;
     englishStylesheet.disabled = false;
   }
+
+  localStorage.setItem('selectedLanguage', language);
+
 }
+
+
+
 
 // Load language selection on page load
 const storedLanguage = localStorage.getItem('selectedLanguage');

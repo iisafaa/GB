@@ -101,10 +101,9 @@
 }
 
 .screen .text-UP-bar {
-    position: absolute;
-    width: 298px;
-    height: 28px;
+    position: relative;
     top: 30px;
+    right: 990px;
     font-family: "Tajawal-Bold", Helvetica;
     font-weight: 700;
     color: #5a8b59;
@@ -361,7 +360,7 @@
     width: 249px;
     height: 982px;
     top: 0;
-    left: 34px;
+    left: 5px;
     background-color: #ffffff;
 }
 
@@ -383,6 +382,16 @@
     /*object-fit: cover;*/
 }
 
+.tammadon-t{
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 24px;
+    direction: rtl;
+    position: relative;
+    font-family: 'Tajawal';
+    right: 30px;
+}
 
 .screen .Side-button1 {
     position: relative;
