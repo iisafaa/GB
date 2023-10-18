@@ -393,50 +393,7 @@
     right: 30px;
 }
 
-.screen .Side-button1 {
-    position: relative;
-    width: 230px;
-    height: 49px;
-    background-color: var(--white);
-    top: 167px;
-    left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: #ffffff;
-}
-
-.screen .Side-button1:hover {
-    background-color: #DDE9CD;
-    color: #ffffff;
-}
-
-.screen .text-wrapper-12 {
-    display: inline-block;
-    /*font-family: "Tajawal-Medium", Helvetica;*/
-    top: 10px;
-    width: 180px;
-    font-weight: 500;
-    color: #5b8b5a;
-    font-size: 20px;
-    letter-spacing: -0.52px;
-    line-height: 21.8px;
-    white-space: nowrap;
-    direction: rtl;
-    font-family: 'Tajawal';
-
-
-}
-
-.screen .chart {
-    display: inline-block;
-    vertical-align: middle;
-    width: 28px;
-    height: 28px;
-}
-
-
-
+.screen .Side-button1,
 .screen .Side-button2 {
     position: relative;
     width: 230px;
@@ -448,34 +405,37 @@
     align-items: center;
     justify-content: space-between;
     border: none;
-    /* Remove the border property */
 }
 
+.screen .Side-button1 .chart,
+.screen .Side-button2 .element-plus {
+    width: 28px;
+    height: 28px;
+   
+}
+
+.screen .Side-button1:hover,
 .screen .Side-button2:hover {
     background-color: #DDE9CD;
     color: #ffffff;
 }
 
+.screen .text-wrapper-12,
 .screen .text-wrapper-13 {
-    display: inline-block;
-    font-family: "Tajawal-Medium", Helvetica;
+    /* font-family: "Tajawal-Medium", Helvetica; */
+    width: 180px; /* Adjust the width as needed */
     font-weight: 500;
-    width: 195px;
     color: #5b8b5a;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: -0.52px;
     line-height: 21.8px;
     white-space: nowrap;
-    direction: rtl;
-    font-family: 'Tajawal'
+    direction: ltr;
+    font-family: 'Tajawal';
+    
 }
 
-.screen .element-plus {
-    display: inline-block;
-    vertical-align: middle;
-    width: 28px;
-    height: 28px;
-}
+
 
 
 
