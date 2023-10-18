@@ -117,8 +117,8 @@
 }
 
 .screen .text-wrapper-4 {
-    top: 110px;
-    left: 140px;
+    top: 100px;
+    left: 120px;
     position: absolute;
     /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
@@ -130,8 +130,8 @@
 }
 
 .screen .text-wrapper-5 {
-    top: 110px;
-    left: 985px;
+    top: 100px;
+    left: 950px;
     position: absolute;
     /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
@@ -176,8 +176,8 @@
 }
 
 .screen .text-wrapper-7 {
-    top: 115px;
-    left: 560px;
+    top: 100px;
+    left: 525px;
     position: absolute;
     /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
@@ -189,8 +189,8 @@
 }
 
 .screen .text-wrapper-8 {
-    top: 50px;
-    left: 500px;
+    top: 60px;
+    left: 470px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
