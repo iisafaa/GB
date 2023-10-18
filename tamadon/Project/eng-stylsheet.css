@@ -116,6 +116,244 @@
 }
 
 
+/*////////////////////////////////////////////////////*/
+
+.screen .overlap- {
+    position: absolute;
+    width: 204px;
+    height: 32px;
+    top: 26px;
+    left: 933px;
+}
+
+
+
+
+/* Style for the button and its container */
+.screen .button-container {
+
+    background-color: transparent;
+}
+
+.screen button#b {
+    background-color: transparent;
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+}
+
+/* Optional: Style the button image */
+.screen button#b img {
+    width: 20px;
+    height: 20px;
+    alt: "Image Description";
+}
+
+.screen .text-wrapper-6 {
+    width: 179px;
+    height: 26px;
+    top: 2px;
+    right: 45px;
+    /*font-family: "Tajawal-Medium", Helvetica;*/
+    font-weight: 500;
+    color: #5a8b59;
+    font-size: 22px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .concret-barrier-box {
+    position: absolute;
+    width: 337px;
+    height: 128px;
+    top: 10px;
+    left: 845px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.screen .concretNumber {
+    position: absolute;
+    width: 193px;
+    top: 35px;
+    left: 123px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .NumOfConcret {
+    position: absolute;
+    width: 82px;
+    top: 77px;
+    left: 234px;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .con-img {
+    position: absolute;
+    width: 76px;
+    height: 67px;
+    top: 31px;
+    left: 24px;
+    background-color: #8bb4544a;
+    border-radius: 8px;
+}
+
+.screen .barricade {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    top: 9px;
+    left: 14px;
+    object-fit: cover;
+}
+
+
+.screen .sand-box {
+    position: absolute;
+    width: 337px;
+    height: 128px;
+    top: 10px;
+    left: 444px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.screen .sandNum {
+    width: 193px;
+    top: 25px;
+    left: 123px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .NumOFSand {
+    position: absolute;
+    width: 178px;
+    top: 82px;
+    left: 138px;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .sand-img {
+    position: absolute;
+    width: 76px;
+    height: 67px;
+    top: 31px;
+    left: 24px;
+
+    background-color: #8bb4544a;
+    border-radius: 8px;
+
+}
+
+.screen .ssss {
+    position: absolute;
+    width: 57px;
+    height: 46px;
+    top: 10px;
+    left: 9px;
+    object-fit: cover;
+}
+
+
+.screen .patholes-box {
+    position: absolute;
+    width: 337px;
+    height: 128px;
+    top: 10px;
+    left: 43px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.screen .patholesNum {
+    width: 193px;
+    top: 25px;
+    left: 123px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .NumOfPatholes {
+    position: absolute;
+    width: 178px;
+    top: 82px;
+    left: 138px;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .pothole-img {
+    position: absolute;
+    width: 76px;
+    height: 67px;
+    top: 31px;
+    left: 24px;
+
+    background-color: #8bb4544a;
+    border-radius: 8px;
+
+}
+
+.screen .pothole {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    top: 13px;
+    left: 17px;
+    object-fit: cover;
+}
+
+
+
 
 /*/////////////////////  side bar ////////////////////////////*/
 .screen .sidebar {
@@ -424,7 +662,7 @@
     width: 204px;
     height: 32px;
     top: 26px;
-    left: 933px;
+    left: 33px;
 }
 
 .screen .text-wrapper-6 {
@@ -653,4 +891,194 @@
 
 }
 
+
+/* table */
+
+.table-container {
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.table-container table {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+    border-radius: 8px;
+    font-family: 'Tajawal', Arial, sans-serif;
+}
+
+.table-container thead {
+    background-color: #dde9cd;
+    height: 3rem;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('Tajawal-Light.ttf') format('truetype');
+    /* Add additional font files if you have different font weights or styles */
+}
+
+.table-container th {
+    font-family: 'Tajawal', Arial, sans-serif;
+    font-size: 20px;
+    color: #5a8b59;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+.table-container tr {
+    height: 42px;
+    font-size: 17px
+}
+
+.table-container .tbody tr:hover {
+    background-color: #f2f2f2;
+    /* Replace with your desired gray color */
+}
+
+
+
+/*           Charts                */
+
+
+.screen .between-erea-rec {
+    position: absolute;
+    width: 1196px;
+    height: max-content;
+    top: 348px;
+    left: 290px;
+}
+
+
+
+.chart-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px 15px;
+    padding: 5px;
+    width: 1185px;
+    height: 500px;
+
+}
+
+
+/* Apply CSS styles to the chart container */
+.chart-container {
+    display: inline-block;
+    width: 500;
+    /* Adjust the width and margin as needed */
+    margin-right: 10px;
+    /* Adjust the margin between charts */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
+    text-align: center;
+  
+}
+
+.chart-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+/* Apply CSS styles to chart elements */
+.chartjs-render-monitor {
+    background-color: white;
+    border-radius: 5px;
+    height: 500px;
+}
+
+
+
+
+
+.screen .overlappp-nigberhood {
+    position: absolute;
+    width: 1196px;
+    height: 597px;
+    top: 148px;
+    left: 286px;
+    border-radius: 10px;
+}
+
+.screen .centerbar-nigberhood {
+    position: absolute;
+    width: 1196px;
+    height: 157px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* image boxes */
+
+.screen .images-container {
+    position: absolute;
+    width: 1196px;
+    height: max-content;
+    top: 348px;
+    left: 286px;
+}
+
+.screen .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 15px 15px;
+    padding: 5px;
+    width: 1185px;
+}
+
+.screen .Image-box {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.screen .inner-image {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 10px;
+    left: 10px;
+    object-fit: contain;
+}
+
+/*           Charts                */
+
+
+.screen .between-erea-rec {
+    position: absolute;
+    width: 1196px;
+    height: max-content;
+    top: 348px;
+    left: 286px;
+}
+
+
+
+.chart-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px 15px;
+    padding: 5px;
+    width: 1185px;
+    height: 500px;
+
+}
 

@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <title>الاحياء</title>
+    <title data-lang="title2">الاحياء</title>
 
     <link id="eng-stylesheet" rel="stylesheet" href="eng-stylsheet.css">
     <link id="ar-stylesheet" rel="stylesheet" href="ar-stylsheet.css">
@@ -51,7 +51,7 @@
                 <div class="overlap-3">
                     <img class="tammadon" src="images/Tammadon.png" />
                     <div
-                        style="width: 249px; height: 0px; left: 15px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
+                        style="width: 240px; height: 0px; left: 5px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
                     </div>
                 </div>
 
@@ -85,13 +85,13 @@
                     <!--search box-->
                     <div class="searchbar">
                         <form class="search">
-                            <input class="search" type="search" placeholder=".....بحث ">
+                            <input class="search" data-lang="search" type="search" placeholder=".....بحث ">
                         </form>
                     </div>
 
                     <!--filter button-->
-                    <button onclick="window.location.href='discritsPage.html';" class="button-filter">
-                        <span class="text-wrapper200">فرز</span>
+                    <button class="button-filter">
+                        <span class="text-wrapper200" data-lang="filter">فرز</span>
                         <img src="images/filter.png" alt="Image" class="filter-search">
                     </button>
 
@@ -100,9 +100,9 @@
                         <table>
 
                             <thead>
-                                <th>نسبة التلوث</th>
-                                <th>تاريخ الإضافة</th>
-                                <th>اسم الحي</th>
+                                <th data-lang="table-left">نسبة التلوث</th>
+                                <th data-lang="table-center">تاريخ الإضافة</th>
+                                <th data-lang="table-right">اسم الحي</th>
                             </thead>
 
                             <tbody id="tbody1" class="tbody">
