@@ -171,15 +171,30 @@
     height: 128px;
     top: 10px;
     left: 845px;
-    background-color: #ffffff;
+    background-color: ghostwhite;
     border-radius: 8px;
 }
 
 .screen .concretNumber {
     position: absolute;
     width: 193px;
-    top: 35px;
-    left: 123px;
+    top: 25px;
+    left: 44px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .concretNumber2 {
+    position: absolute;
+    width: 193px;
+    top: 70px;
+    left: 26px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
     color: #5a8b59;
@@ -193,8 +208,8 @@
 .screen .NumOfConcret {
     position: absolute;
     width: 82px;
-    top: 77px;
-    left: 234px;
+    top: 71px;
+    left: 55px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
@@ -232,14 +247,29 @@
     height: 128px;
     top: 10px;
     left: 444px;
-    background-color: #ffffff;
+    background-color: ghostwhite;
     border-radius: 8px;
 }
 
 .screen .sandNum {
     width: 193px;
     top: 25px;
-    left: 123px;
+    left: 113px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .sandNum2 {
+    width: 193px;
+    top: 70px;
+    left: 92px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
     color: #5a8b59;
@@ -254,8 +284,8 @@
 .screen .NumOFSand {
     position: absolute;
     width: 178px;
-    top: 82px;
-    left: 138px;
+    top: 71px;
+    left: -44px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
@@ -295,14 +325,30 @@
     height: 128px;
     top: 10px;
     left: 43px;
-    background-color: #ffffff;
+    background-color: ghostwhite;
     border-radius: 8px;
 }
+
 
 .screen .patholesNum {
     width: 193px;
     top: 25px;
-    left: 123px;
+    left: 40px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+.screen .patholesNum2 {
+    width: 193px;
+    top: 70px;
+    left: 5px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
     color: #5a8b59;
@@ -317,8 +363,8 @@
 .screen .NumOfPatholes {
     position: absolute;
     width: 178px;
-    top: 82px;
-    left: 138px;
+    top: 71px;
+    left: -49px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
@@ -639,7 +685,7 @@
     width: 179px;
     height: 26px;
     top: 2px;
-    right: 45px;
+    right: -20px;
     /*font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #5a8b59;
@@ -1026,7 +1072,7 @@
     height: 160px;
     top: 10px;
     left: 10px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /*           Charts                */

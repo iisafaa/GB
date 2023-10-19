@@ -4,8 +4,11 @@
 
   "title": "احصائيات",
   "total_potholes": "اجمالي الحفر",
+  "result_potholes": "حفرة",
   "total_sand": "اجمالي الرمل على الطريق",
+  "result_sand": "رمل على الطريق",
   "total_concrete": "اجمالي الصبات",
+  "result_concrete": "صبة",
   "total_concrete-makkah": "عدد الصبات في مناطق مكة المكرمة",
   "total_patholes-makkah": "عدد الحفر في مناطق مكة المكرمة",
   "total_sand-makkah": "عدد الرمل على الطريق في مناطق مكة المكرمة",

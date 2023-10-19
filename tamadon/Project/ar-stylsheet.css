@@ -702,7 +702,7 @@
     height: 128px;
     top: 10px;
     left: 845px;
-    background-color: #ffffff;
+    background-color:ghostwhite;
     border-radius: 8px;
 }
 
@@ -721,10 +721,25 @@
     font-family: 'Tajawal'
 }
 
+.screen .concretNumber2 {
+    position: absolute;
+    width: 193px;
+    top: 70px;
+    left: 86px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOfConcret {
     position: absolute;
-    width: 82px;
-    top: 77px;
+    width: 70px;
+    top: 70px;
     left: 234px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
@@ -763,7 +778,7 @@
     height: 128px;
     top: 10px;
     left: 444px;
-    background-color: #ffffff;
+    background-color: ghostwhite;
     border-radius: 8px;
 }
 
@@ -782,10 +797,25 @@
     font-family: 'Tajawal'
 }
 
+.screen .sandNum2 {
+    width: 193px;
+    top: 70px;
+    left: 109px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOFSand {
     position: absolute;
     width: 178px;
-    top: 82px;
+    top: 70px;
     left: 138px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
@@ -826,7 +856,7 @@
     height: 128px;
     top: 10px;
     left: 43px;
-    background-color: #ffffff;
+    background-color: ghostwhite;
     border-radius: 8px;
 }
 
@@ -845,10 +875,25 @@
     font-family: 'Tajawal'
 }
 
+.screen .patholesNum2 {
+    width: 193px;
+    top: 70px;
+    left: 100px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: #5a8b59;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOfPatholes {
     position: absolute;
     width: 178px;
-    top: 82px;
+    top: 70px;
     left: 138px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
@@ -971,6 +1016,7 @@
     gap: 15px 15px;
     padding: 5px;
     width: 1185px;
+    direction: rtl;
 }
 
 .screen .Image-box {

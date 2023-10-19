@@ -1,11 +1,14 @@
 {
-  "statics": "statistics",
-  "district": "district",
+  "statics": "Statistics",
+  "district": "District",
   
   "title": "Statistics",
   "total_potholes": "Total Potholes",
+  "result_potholes": " Pothole",
   "total_sand": "Total Sand on the Road",
+  "result_sand": "  Sand on the road",
   "total_concrete": "Total Concrete",
+  "result_concrete": " Concrete",
   "total_concrete-makkah": "Total Concrete in makkah",
   "total_patholes-makkah": "Total patholes in makkah",
   "total_sand-makkah": "Total sand on road in makkah",

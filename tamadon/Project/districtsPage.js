@@ -39,9 +39,9 @@
                 if (snapshot.exists()) {
                             alert(snapshot.val().neighborhood + ' مكة');
                     document.getElementById('neigbour').innerHTML = snapshot.val().neighborhood + ' مكة';
-                    document.getElementById('concrete').innerHTML = snapshot.val().ToatalOfConcreteBarrier + ' صبة';
-                    document.getElementById('potholes').innerHTML = snapshot.val().ToatalOfPothole + ' حفرة';
-                    document.getElementById('sand').innerHTML = snapshot.val().ToatalOfSandOnRoad + ' رمل على الطريق';
+                    document.getElementById('concrete').innerHTML = snapshot.val().ToatalOfConcreteBarrier ;
+                    document.getElementById('potholes').innerHTML = snapshot.val().ToatalOfPothole;
+                    document.getElementById('sand').innerHTML = snapshot.val().ToatalOfSandOnRoad;
                     album(neighborhood);
                 } else {
 
@@ -289,10 +289,17 @@
         
           if (snapshot.exists()) {
             snapshot.forEach((urlSnapshot) => {
-              
-        
-                const url = urlSnapshot.val();
-        
+
+                const data = urlSnapshot.val();
+                const values = Object.values(data);
+
+                const url = values[0];
+                const location = values[1];
+
+                const anchor= document.createElement("a");
+                anchor.href= location;
+                anchor.classList.add("anchor");
+
                 const imgBox = document.createElement("div");
                 imgBox.classList.add("Image-box")
         
@@ -301,9 +308,10 @@
                 image.alt = "Visual Pollution Image";
                 image.classList.add("inner-image");
         
-                imgBox.appendChild(image);
+                anchor.appendChild(image);
+                imgBox.appendChild(anchor);
                 document.querySelector(".grid-container").appendChild(imgBox);
-             
+            
             });
           } else {
             alert("No data found");
