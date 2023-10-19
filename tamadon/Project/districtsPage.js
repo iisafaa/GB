@@ -54,10 +54,6 @@
             });
     }
 
-
-    
-
-
     export async function genratePDF(){
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
@@ -267,14 +263,14 @@
             });
 
             // calculate the percentage of each pollution type
-            concrete = (concrete / await totalData() ) * 100 ;
-            potholes = (potholes / await totalData() ) * 100 ;
-            sand = (sand / await totalData() ) * 100 ;
+            // concrete = (concrete / await totalData() ) * 100 ;
+            // potholes = (potholes / await totalData() ) * 100 ;
+            // sand = (sand / await totalData() ) * 100 ;
 
             //assign values in the html page
-            document.getElementById('statPotholes').innerHTML = potholes.toFixed(2)+ '%';
-            document.getElementById('statSand').innerHTML = sand.toFixed(2)+ '%';
-            document.getElementById('statConcrete').innerHTML = concrete.toFixed(2)+ '%';
+            document.getElementById('statPotholes').innerHTML = potholes;//.toFixed(2)+ '%';
+            document.getElementById('statSand').innerHTML = sand;//.toFixed(2)+ '%';
+            document.getElementById('statConcrete').innerHTML = concrete;//.toFixed(2)+ '%';
 
             } else {
             alert('nothing found');
