@@ -518,7 +518,7 @@
     width: 1196px;
     height: 797px;
     top: 148px;
-    left: 290px;
+    left: 280px;
     border-radius: 10px;
 }
 
@@ -539,7 +539,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    left: 870px;
+    left: 50px;
     top: 62px;
 
 }
@@ -571,7 +571,8 @@
 
     padding: 9px 4px 9px 40px;
     background: transparent url("search-icon.png") no-repeat 13px center;
-    text-align: right;
+    text-align: left;
+    
 
 }
 
@@ -583,7 +584,7 @@
     width: 86px;
     height: 43px;
     top: 62px;
-    left: 763px;
+    left: 350px;
     background-color: #dde9cd;
     border-radius: 8px;
     border: none;
@@ -603,7 +604,7 @@
     width: 27px;
     height: 23px;
     top: 10px;
-    left: 13px;
+    left: 33px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
     color: #5a8b59;
@@ -620,7 +621,7 @@
     width: 20px;
     height: 20px;
     top: 11px;
-    left: 46px;
+    left: 5px;
 }
 
 
