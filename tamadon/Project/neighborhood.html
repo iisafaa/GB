@@ -4,19 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Stylesheet.css">
+
     <title>منطقة معينة</title>
+
+
+    <link id="eng-stylesheet" rel="stylesheet" href="eng-stylsheet.css">
+    <link id="ar-stylesheet" rel="stylesheet" href="ar-stylsheet.css">
+
+
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
-<<<<<<< HEAD
-   
-=======
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.js"></script>
 
->>>>>>> 81cf84c7a4b539f983426107f19ad5fc9ff7095a
     <script type="module">
         // Import the function from the module script
         import { neighborhoodPage, genratePDF } from './districtsPage.js';
@@ -27,7 +29,7 @@
             // Call the imported function
             neighborhoodPage();
         });
-        
+
     </script>
 
 </head>
@@ -41,12 +43,13 @@
                         <div class="text-wrapper-10">أمانة العاصمة المقدسة</div>
                         <div class="text-wrapper-11">مكة المكرمة</div>
                     </div>
-                    <img class="makkah-logo" src="makkahLogo.png" />
+                    <img class="makkah-logo" src="images/makkahLogo.png" />
+
                     <div class="overlap-">
                         <div class="text-wrapper-6" id="neigbour"></div>
 
                         <div class="button-container">
-                            <button id="b"> <img src="downloads.png" width="20" height="20"
+                            <button id="b"> <img src="images/downloads.png" width="20" height="20"
                                     alt="Image Description"></button>
                         </div>
 
@@ -56,51 +59,57 @@
 
             <div class="sidebar"><!-- Side Bar  -->
                 <div class="overlap-3">
-                    <img class="tammadon" src="Tammadon.png" />
+                    <p>تمدُن</p>
+                    <img class="tammadon" src="images/Tammadon.png" />
                     <div
-                        style="width: 249px; height: 0px; left: 15px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
+                        style="width: 240px; height: 0px; left: 5px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
                     </div>
                 </div>
+
                 <button onclick="window.location.href='staticsPage.html';" , class="Side-button1">
-                    <span class="text-wrapper-12">احصائيات</span>
-                    <img src="num.png" alt="Image" class="chart">
+                    <span class="text-wrapper-12" data-lang="statics" style="left: 50px;">احصائيات</span>
+                    <img src="images/num.png" alt="Image" class="chart">
                 </button>
-
-
+    
+    
                 <button onclick="window.location.href='discritsPage.html';" , class="Side-button2">
-                    <span class="text-wrapper-13">الأحياء</span>
-                    <img src="discrits.png" alt="Image" class="element-plus">
+                    <span class="text-wrapper-13" data-lang="district" >الأحياء</span>
+                    <img src="images/discrits.png" alt="Image" class="element-plus">
                 </button>
+    
+    
+    
+                <div class="buttons">
+                    <button value="english" , id="eng" , class="Side-button3">
+                        <span class="engl">English</span></button>
+                    <button value="arabic" , id="ar" , class="Side-button4">
+                        <span class="ar">عربي</span></button>
+                </div>
 
             </div>
 
             <div class="overlappp-nigberhood">
                 <div class="centerbar-nigberhood">
                     <div class="concret-barrier-box">
-                        <div class="concretNumber">إجمالي عدد الصبات</div>
+                        <div class="concretNumber" data-lang="total_concrete" >إجمالي عدد الصبات</div>
                         <div class="NumOfConcret" id="concrete"></div>
-                        <div class="con-img"><img class="barricade" src="concretebrair.png" /></div>
+                        <div class="con-img"><img class="barricade" src="images/concretebrair.png" /></div>
                     </div>
 
                     <div class="sand-box">
-                        <div class="sandNum"> إجمالي عدد الرمل<br />على الطريق</div>
+                        <div class="sandNum" data-lang="total_sand"> إجمالي عدد الرمل<br />على الطريق</div>
                         <div class="NumOFSand" id="sand"></div>
-                        <div class="sand-img"><img class="ssss" src="sand.png" /></div>
+                        <div class="sand-img"><img class="ssss" src="images/sand.png" /></div>
                     </div>
 
                     <div class="patholes-box">
-                        <div class="patholesNum">إجمالي عدد الحفر</div>
+                        <div class="patholesNum" data-lang="total_potholes">إجمالي عدد الحفر</div>
                         <div class="NumOfPatholes" id="potholes"></div>
-                        <div class="pothole-img"><img class="pothole" src="patholes.png" /></div>
+                        <div class="pothole-img"><img class="pothole" src="images/patholes.png" /></div>
                     </div>
 
                 </div>
-
             </div>
-
-
-
-
 
             <!-- images -->
             <div class="images-container">
@@ -109,18 +118,16 @@
                     <div class="Image-box" style="display: none;">
                         <img class="inner-image" src=" " />
                     </div>
-
                 </div>
-
             </div>
-
-
 
         </div>
 
     </div>
 
     <script src="districtsPage.js" type="module"></script>
+    <script src="languages.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,20 @@
+{
+  "statics": "statistics",
+  "district": "district",
+  
+  "title": "Statistics",
+  "total_potholes": "Total Potholes",
+  "total_sand": "Total Sand on the Road",
+  "total_concrete": "Total Concrete",
+  "total_concrete-makkah": "Total Concrete in makkah",
+  "total_patholes-makkah": "Total patholes in makkah",
+  "total_sand-makkah": "Total sand on road in makkah",
+  "makkah-statics": "Mecca region statistics",
+
+  "title2": "district",
+  "search": "search",
+  "filter": "filter",
+  "table-left": " district name",
+  "table-center": "creation date",
+  "table-right": "pollution precentage"
+}

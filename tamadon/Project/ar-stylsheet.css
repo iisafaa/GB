@@ -1,12 +1,3 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* This prevents scrollbars */
-}
-
-
 
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
@@ -42,16 +33,6 @@ html, body {
     position: relative;
 }
 
-.screen .between-erea-rec {
-    width: 370px;
-    left: 869px;
-    position: absolute;
-    height: 522px;
-    top: 357px;
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-
 .screen .text-wrapper {
     top: 30px;
     left: 190px;
@@ -72,16 +53,6 @@ html, body {
     width: 7px;
     height: 34px;
     background-color: #5a8b59;
-}
-
-.screen .between-erea-rec-2 {
-    width: 812px;
-    left: 45px;
-    position: absolute;
-    height: 522px;
-    top: 357px;
-    background-color: #ffffff;
-    border-radius: 8px;
 }
 
 .screen .text-wrapper-2 {
@@ -146,8 +117,8 @@ html, body {
 }
 
 .screen .text-wrapper-4 {
-    top: 110px;
-    left: 140px;
+    top: 100px;
+    left: 120px;
     position: absolute;
     /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
@@ -159,8 +130,8 @@ html, body {
 }
 
 .screen .text-wrapper-5 {
-    top: 110px;
-    left: 985px;
+    top: 100px;
+    left: 950px;
     position: absolute;
     /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
@@ -205,8 +176,8 @@ html, body {
 }
 
 .screen .text-wrapper-7 {
-    top: 115px;
-    left: 560px;
+    top: 100px;
+    left: 525px;
     position: absolute;
     /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
@@ -218,8 +189,8 @@ html, body {
 }
 
 .screen .text-wrapper-8 {
-    top: 50px;
-    left: 500px;
+    top: 60px;
+    left: 470px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
@@ -285,6 +256,8 @@ html, body {
     font-family: 'Tajawal'
 }
 
+
+/* up bar */
 .screen .upbar {
     position: absolute;
     width: 1228px;
@@ -397,6 +370,7 @@ html, body {
     /*object-fit: cover;*/
 }
 
+
 .screen .Side-button1 {
     position: relative;
     width: 230px;
@@ -482,6 +456,85 @@ html, body {
     height: 28px;
 }
 
+
+
+.buttons{
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px 5px;
+    padding: 5px;
+    width: 249px;
+    height: 20px;
+    top: 790px;
+    
+}
+
+
+.screen .Side-button3 {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #ffffff;
+}
+
+.screen .Side-button3:hover {
+    background-color: #DDE9CD;
+    color: #ffffff;
+}
+.screen .engl {
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 195px;
+
+    color: #5b8b5a;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+
+.screen .Side-button4 {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #ffffff;
+}
+
+.screen .Side-button4:hover {
+    background-color: #DDE9CD;
+    color: #ffffff;
+}
+
+
+.screen .ar {
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 195px;
+
+    color: #5b8b5a;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
+
 /*/////////////////search/////////////////////////////////////////////////////////////////////////////////////*/
 
 .screen .overlappp {
@@ -496,11 +549,12 @@ html, body {
 .screen .centerbar {
     position: absolute;
     width: 1196px;
-    height: 797px;
+    height: max-content;
     top: 0;
     left: 0;
     background-color: #ffffff;
     border-radius: 10px;
+    padding-bottom: 30px;
 }
 
 
@@ -625,12 +679,13 @@ html, body {
 /* Style for the button and its container */
 .screen .button-container {
     float: right;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .screen button#b {
-    background-color: transparent; 
-    border: none; /* Remove border */
+    background-color: transparent;
+    border: none;
+    /* Remove border */
     cursor: pointer;
 }
 
@@ -932,34 +987,60 @@ html, body {
     height: 160px;
     top: 10px;
     left: 10px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
-<<<<<<< HEAD
+/*           Charts                */
 
-        /* Apply CSS styles to the chart container */
-        .chart-container {
-            display: inline-block;
-            width: 500; /* Adjust the width and margin as needed */
-            margin-right: 10px; /* Adjust the margin between charts */
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 10px; 
-           /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
-        }        
 
-        .chart-title {
-            font-size: 15px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+.screen .between-erea-rec {
+    position: absolute;
+    width: 1196px;
+    height: max-content;
+    top: 348px;
+    left: 43px;
+}
 
-        /* Apply CSS styles to chart elements */
-        .chartjs-render-monitor {
-            background-color: white;
-            border-radius: 5px;
-        }
+
+
+.chart-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px 15px;
+    padding: 5px;
+    width: 1185px;
+    height: 500px;
+
+}
+
+
+/* Apply CSS styles to the chart container */
+.chart-container {
+    display: inline-block;
+    width: 500;
+    /* Adjust the width and margin as needed */
+    margin-right: 10px;
+    /* Adjust the margin between charts */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
+    text-align: center;
+  
+}
+
+.chart-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
     
+}
 
-/* >>>>>>> 81cf84c7a4b539f983426107f19ad5fc9ff7095a */
+/* Apply CSS styles to chart elements */
+.chartjs-render-monitor {
+    background-color: white;
+    border-radius: 5px;
+    height: 500px;
+}

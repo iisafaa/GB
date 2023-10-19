@@ -1,0 +1,20 @@
+{
+  "statics": "احصائيات",
+  "district": "الأحياء",
+
+  "title": "احصائيات",
+  "total_potholes": "اجمالي الحفر",
+  "total_sand": "اجمالي الرمل على الطريق",
+  "total_concrete": "اجمالي الصبات",
+  "total_concrete-makkah": "عدد الصبات في مناطق مكة المكرمة",
+  "total_patholes-makkah": "عدد الحفر في مناطق مكة المكرمة",
+  "total_sand-makkah": "عدد الرمل على الطريق في مناطق مكة المكرمة",
+  "makkah-statics": "احصائيات منطقة مكة المكرمة",
+
+  "title2": "الاحياء",
+  "search": "بحث",
+  "filter": "فرز",
+  "table-left": "نسبة التلوث",
+  "table-center": "تاريخ الإضافة",
+  "table-right": "اسم الحي"
+}
