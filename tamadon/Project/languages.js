@@ -1,42 +1,3 @@
-// Function to change the language
-function changeLanguage(language) {
-  fetch(`lang-${language}.json`)
-    .then((response) => response.json())
-    .then((translations) => {
-      document.querySelectorAll('[data-lang]').forEach((element) => {
-        const translationKey = element.getAttribute('data-lang');
-        if (translations[translationKey]) {
-          element.textContent = translations[translationKey];
-        }
-      });
-    });
-
-  const arabicStylesheet = document.getElementById('ar-stylesheet');
-  const englishStylesheet = document.getElementById('eng-stylesheet');
-
-  if (language === 'arabic') {
-    arabicStylesheet.disabled = false;
-    englishStylesheet.disabled = true;
-  } else {
-    arabicStylesheet.disabled = true;
-    englishStylesheet.disabled = false;
-  }
-
-  localStorage.setItem('selectedLanguage', language);
-
-}
-
-
-document.getElementById('ar').addEventListener('click', () => {
-  changeLanguage('arabic');
-  window.location.href = 'staticsPage.html'; 
-});
-
-document.getElementById('eng').addEventListener('click', () => {
-  changeLanguage('english');
-  window.location.href = 'staticsPage.html'; 
-});
-
 function changeLanguage(language) {
   fetch(`lang-${language}.json`)
     .then((response) => response.json())
@@ -75,6 +36,18 @@ function changeLanguage(language) {
     });
   }
 }
+
+
+document.getElementById('ar').addEventListener('click', () => {
+  changeLanguage('arabic');
+ 
+});
+
+document.getElementById('eng').addEventListener('click', () => {
+  changeLanguage('english');
+
+});
+
 
 // Load language selection on page load
 const storedLanguage = localStorage.getItem('selectedLanguage');
