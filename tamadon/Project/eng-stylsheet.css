@@ -736,7 +736,7 @@
 
 .screen .text-wrapper-3 {
     top: 60px;
-    left: 85px;
+    left: 170px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
@@ -803,7 +803,7 @@
 .screen .settings-check {
     height: 90px;
     top: 10px;
-    left: 12px;
+    right: 280px;
     position: absolute;
     width: 90px;
 }
@@ -836,40 +836,22 @@
     font-family: 'Tajawal'
 }
 
-.screen .overlap-group {
-    position: absolute;
-    width: 109px;
-    height: 109px;
-    top: 40px;
-    left: 620px;
-    background-image: url(ell.png);
-    background-size: 100% 100%;
 
-}
 
 .screen .x {
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
-    left: 13px;
-}
-
-.screen .settings-wrapper {
-    position: absolute;
-    width: 109px;
-    height: 109px;
     top: 40px;
-    left: 200px;
-    background-image: url(ell.png);
-    background-size: 100%;
-
+    left: 370px;
 }
+
+
 
 .screen .settings {
     height: 75px;
-    top: 10px;
-    left: 15px;
+    top: 60px;
+    left: 60px;
     position: absolute;
     width: 75px;
 }

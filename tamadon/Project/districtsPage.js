@@ -7,7 +7,7 @@
     
     const firebaseConfig = {
 
-        apiKey: "AIzaSyBZCozeeUfIW4DNaa08FJMjoQSgWgotmbI",
+    apiKey: "AIzaSyBZCozeeUfIW4DNaa08FJMjoQSgWgotmbI",
     authDomain: "gradb-a7c23.firebaseapp.com",
     databaseURL: "https://gradb-a7c23-default-rtdb.firebaseio.com",
     projectId: "gradb-a7c23",

@@ -221,21 +221,11 @@
     left: 13px;
 }
 
-.screen .settings-wrapper {
-    position: absolute;
-    width: 109px;
-    height: 109px;
-    top: 40px;
-    left: 200px;
-    background-image: url(ell.png);
-    background-size: 100%;
-
-}
 
 .screen .settings {
     height: 75px;
-    top: 10px;
-    left: 15px;
+    top: 50px;
+    left: 180px;
     position: absolute;
     width: 75px;
 }
