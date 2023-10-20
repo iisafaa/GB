@@ -3,6 +3,7 @@
     width: 7px;
 }
 
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
@@ -933,6 +934,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    direction: rtl;
 }
 
 .table-container table {

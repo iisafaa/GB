@@ -181,9 +181,9 @@
         td2.innerHTML = date;
         td3.innerHTML = prcnt;
         
-        trow.appendChild(td3);
-        trow.appendChild(td2);
         trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
 
         tbody.appendChild(trow);
 

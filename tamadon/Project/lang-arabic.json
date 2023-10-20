@@ -18,7 +18,7 @@
   "title2": "الاحياء",
   "search": "بحث",
   "filter": "فرز",
-  "table-left": "نسبة التلوث",
-  "table-center": "تاريخ الإضافة",
-  "table-right": "اسم الحي"
+  "dist_name": "اسم الحي",
+  "creation_date": "تاريخ الإضافة",
+  "percent": "نسبة التلوث"
 }

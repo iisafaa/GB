@@ -18,7 +18,7 @@
   "title2": "district",
   "search": "search",
   "filter": "filter",
-  "table-left": " district name",
-  "table-center": "creation date",
-  "table-right": "pollution precentage"
+  "dist_name": " district name",
+  "creation_date": "creation date",
+  "percent": "pollution precentage"
 }
