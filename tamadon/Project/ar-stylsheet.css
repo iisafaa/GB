@@ -713,7 +713,7 @@
     height: 128px;
     top: 10px;
     left: 845px;
-    background-color: ghostwhite;
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -789,7 +789,7 @@
     height: 128px;
     top: 10px;
     left: 444px;
-    background-color: ghostwhite;
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -867,7 +867,7 @@
     height: 128px;
     top: 10px;
     left: 43px;
-    background-color: ghostwhite;
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -1004,7 +1004,6 @@
     height: 157px;
     top: 0;
     left: 0;
-    background-color: #ffffff;
     border-radius: 10px;
 }
 
