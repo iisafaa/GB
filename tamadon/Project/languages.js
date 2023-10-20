@@ -1,3 +1,7 @@
+// Define a custom event for language change
+// Define a variable to store the current language
+
+
 function changeLanguage(language) {
   fetch(`lang-${language}.json`)
     .then((response) => response.json())
@@ -14,6 +18,7 @@ function changeLanguage(language) {
 
   const arabicStylesheet = document.getElementById('ar-stylesheet');
   const englishStylesheet = document.getElementById('eng-stylesheet');
+
 
   if (language === 'arabic') {
     arabicStylesheet.disabled = false;
@@ -35,6 +40,13 @@ function changeLanguage(language) {
       }
     });
   }
+
+  currentLanguage = language;
+
+  // Trigger a custom event to notify other parts of your code about the language change
+  const languageChangeEvent = new Event('languageChange');
+  document.dispatchEvent(languageChangeEvent);
+
 }
 
 
