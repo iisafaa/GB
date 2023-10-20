@@ -1,7 +1,8 @@
 {
   "statics": "Statistics",
   "district": "District",
-  
+  "tammadont": "tammadon",
+
   "title": "Statistics",
   "total_potholes": "Total Potholes",
   "result_potholes": " Pothole",
