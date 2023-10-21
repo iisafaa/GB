@@ -78,7 +78,7 @@
     width: 1194px;
     height: 190px;
     top: 135px;
-    left: 45px;
+    left: 34px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -1054,7 +1054,7 @@
 .chart-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 15px 15px;
+    gap: 25px 25px;
     padding: 5px;
     width: 1185px;
     height: 500px;
@@ -1065,7 +1065,7 @@
 /* Apply CSS styles to the chart container */
 .chart-container {
     display: inline-block;
-    width: 500;
+    width: 343px;
     /* Adjust the width and margin as needed */
     margin-right: 10px;
     /* Adjust the margin between charts */

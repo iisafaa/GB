@@ -45,7 +45,7 @@
     position: relative;
     width: 1194px;
     height: 85px;
-    left: 280px;
+    left: 275px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -567,7 +567,7 @@
     width: 1196px;
     height: 797px;
     top: 148px;
-    left: 280px;
+    left: 275px;
     border-radius: 10px;
 }
 
@@ -711,7 +711,7 @@
     width: 1194px;
     height: 190px;
     top: 135px;
-    left: 285px;
+    left: 275px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -777,7 +777,7 @@
 
 .screen .text-wrapper-66 {
     top: 60px;
-    left: 910px;
+    left: 970px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
@@ -790,22 +790,12 @@
     font-family: 'Tajawal'
 }
 
-.screen .overlap {
-    position: absolute;
-    width: 109px;
-    height: 109px;
-    top: 40px;
-    left: 1043px;
-    background-image: url(ell.png);
-    background-size: 100% 100%;
-}
-
 .screen .settings-check {
     height: 90px;
-    top: 10px;
-    right: 280px;
+    top: 45px;
+    right: 230px;
     position: absolute;
-    width: 90px;
+    
 }
 
 .screen .text-wrapper-7 {
@@ -823,7 +813,7 @@
 
 .screen .text-wrapper-8 {
     top: 60px;
-    left: 480px;
+    left: 540px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
@@ -843,7 +833,7 @@
     width: 80px;
     height: 80px;
     top: 40px;
-    left: 370px;
+    right: 660px;
 }
 
 
@@ -869,27 +859,6 @@
     position: absolute;
     direction: rtl;
     font-family: 'Tajawal'
-}
-
-
-.screen .between-erea-rec {
-    position: absolute;
-    width: 1196px;
-    height: max-content;
-    top: 348px;
-    left: 285px;
-}
-
-
-
-.chart-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 15px 15px;
-    padding: 5px;
-    width: 1185px;
-    height: 500px;
-
 }
 
 
@@ -943,62 +912,6 @@
 
 
 
-/*           Charts                */
-
-
-.screen .between-erea-rec {
-    position: absolute;
-    width: 1196px;
-    height: max-content;
-    top: 348px;
-    left: 290px;
-}
-
-
-
-.chart-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 15px 15px;
-    padding: 5px;
-    width: 1185px;
-    height: 500px;
-
-}
-
-
-/* Apply CSS styles to the chart container */
-.chart-container {
-    display: inline-block;
-    width: 500;
-    /* Adjust the width and margin as needed */
-    margin-right: 10px;
-    /* Adjust the margin between charts */
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    border-color: transparent;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
-    text-align: center;
-
-}
-
-.chart-title {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 10px;
-
-}
-
-/* Apply CSS styles to chart elements */
-.chartjs-render-monitor {
-    background-color: white;
-    border-radius: 5px;
-    height: 500px;
-}
-
-
 
 
 
@@ -1007,7 +920,7 @@
     width: 1196px;
     height: 597px;
     top: 148px;
-    left: 286px;
+    left: 275px;
     border-radius: 10px;
 }
 
@@ -1031,7 +944,7 @@
     width: 1196px;
     height: max-content;
     top: 348px;
-    left: 286px;
+    left: 275px;
 }
 
 .screen .grid-container {
@@ -1059,6 +972,8 @@
     object-fit: cover;
 }
 
+
+
 /*           Charts                */
 
 
@@ -1067,7 +982,7 @@
     width: 1196px;
     height: max-content;
     top: 348px;
-    left: 286px;
+    left: 275px;
 }
 
 
@@ -1075,9 +990,41 @@
 .chart-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 15px 15px;
+    gap: 25px 25px;
     padding: 5px;
     width: 1185px;
     height: 500px;
 
+}
+
+
+/* Apply CSS styles to the chart container */
+.chart-container {
+    display: inline-block;
+    width: 343px;
+    /* Adjust the width and margin as needed */
+    margin-right: 10px;
+    /* Adjust the margin between charts */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
+    text-align: center;
+
+}
+
+.chart-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+/* Apply CSS styles to chart elements */
+.chartjs-render-monitor {
+    background-color: white;
+    border-radius: 5px;
+    height: 500px;
 }
