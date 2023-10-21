@@ -18,22 +18,23 @@
 
     <script type="module">
         // Import the function from the module script
-        import {staticPage } from './staticscript.js';
+        import {staticPage,totalData } from './staticscript.js';
         import {pollutionPercentage } from './districtsPage.js';
 
         document.addEventListener('DOMContentLoaded', function () {
             // Call the imported function
             pollutionPercentage();
             staticPage();
+            totalData();
         });
 
-        // Import the function from the module script
-        import { pollutionPercentage} from './districtsPage.js';
+        // // Import the function from the module script
+        // import { pollutionPercentage} from './districtsPage.js';
 
-        document.addEventListener('DOMContentLoaded', function () {
-            // Call the imported function
-            pollutionPercentage();
-        });
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     // Call the imported function
+        //     pollutionPercentage();
+        // });
 
     </script>
 
