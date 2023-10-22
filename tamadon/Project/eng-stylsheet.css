@@ -196,7 +196,7 @@
     left: 26px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
-    color: #5a8b59;
+    color: black;
     font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
@@ -271,7 +271,7 @@
     left: 92px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
-    color: #5a8b59;
+    color: black;
     font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
@@ -350,7 +350,7 @@
     left: 5px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
-    color: #5a8b59;
+    color: black;
     font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
@@ -1058,8 +1058,8 @@
 
 .screen .inner-pop-image {
     position: absolute;
-    width: max-content;
-    height: max-content;
+    width: 250px;
+    height: 250px;
     top: 10px;
     left: 10px;
     object-fit: cover;
@@ -1087,7 +1087,7 @@
     position: relative;
     width: 200px;
     height: 40px;
-    background-color: var(--white);
+    background-color: #DDE9CD;
     top: 367px;
     left: 140px;
     display: flex;
@@ -1100,7 +1100,7 @@
 }
 
 .move-button:hover{
-    background-color:#DDE9CD;
+    background-color:#bfd99f;
     color: #ffffff;
 }
 
@@ -1108,7 +1108,8 @@
     display: inline-block;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
-    width: 195px;
+    width: 127px;
+    position: fixed;
     color: black;
     font-size: 20px;
     letter-spacing: -0.52px;

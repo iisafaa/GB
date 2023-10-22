@@ -1,7 +1,7 @@
 {
   "statics": "Statistics",
   "district": "District",
-  "tammadont": "tammadon",
+  "tammadont": "Tammadon",
 
   "title": "Statistics",
   "total_potholes": "Total Potholes",
@@ -15,10 +15,11 @@
   "total_sand-makkah": "Total sand on road in makkah",
   "makkah-statics": "Mecca region statistics",
 
-  "title2": "district",
+  "title2": "District",
   "search": "search",
   "filter": "filter",
-  "dist_name": " district name",
-  "creation_date": "creation date",
-  "percent": "pollution precentage"
+  "dist_name": " District Name",
+  "creation_date": "Creation Date",
+  "percent": "Pollution Precentage",
+  "location":"Location"
 }

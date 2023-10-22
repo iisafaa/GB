@@ -20,7 +20,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-
 const db = getDatabase();
 const dbref = ref(db);
 
@@ -37,7 +36,6 @@ export async function neighborhoodPage() {
     await get(child(dbref, "MAKKAH/" + neighborhood))
         .then((snapshot) => {
             if (snapshot.exists()) {
-                alert(snapshot.val().neighborhood + ' مكة');
                 document.getElementById('neigbour').innerHTML = snapshot.val().neighborhood + ' مكة';
                 document.getElementById('concrete').innerHTML = snapshot.val().ToatalOfConcreteBarrier;
                 document.getElementById('potholes').innerHTML = snapshot.val().ToatalOfPothole;
@@ -169,84 +167,28 @@ export async function genratePDF() {
         });
 }
 
-
-/*
-    function addItemToTable(dist, date, prcnt){
-        let trow = document.createElement('tr');
-        let td1 = document.createElement('td');
-        let td2 = document.createElement('td');
-        let td3 = document.createElement('td');
-
-        td1.innerHTML = dist;
-        td2.innerHTML = date;
-        td3.innerHTML = prcnt;
-        
-        trow.appendChild(td1);
-        trow.appendChild(td2);
-        trow.appendChild(td3);
-
-        tbody.appendChild(trow);
-
-        // event listener to the row
-        trow.addEventListener('click', async function() {
-            // Perform action based on the clicked row
-            // Example: Log the neighborhood name to the console
-            const url = 'neighborhood.html?neighborhood=' + encodeURIComponent(dist);
-            // Redirect the user to the new page
-            console.log('Clicked row:', dist);
-            window.location.href = url;
-            // Replace the above console.log statement with your desired action
-        });
-        
-    }
-    */
-
-
-let td1Dist, td2Date, td3Prcnt;
-
-function setTableContentVariables(dist, date, prcnt) {
-    if (currentLanguage === 'arabic') {
-        td1Dist = dist;
-        td2Date = date;
-        td3Prcnt = prcnt;
-    } else if (currentLanguage === 'english') {
-        td1Dist = prcnt;
-        td2Date = date;
-        td3Prcnt = dist;
-    }
-}
-
-document.addEventListener('languageChange', setTableContentVariables);
-
 function addItemToTable(dist, date, prcnt) {
-    setTableContentVariables(dist, date, prcnt);
 
     let trow = document.createElement('tr');
     let td1 = document.createElement('td');
     let td2 = document.createElement('td');
     let td3 = document.createElement('td');
 
-    td1.innerHTML = td1Dist;
-    td2.innerHTML = td2Date;
-    td3.innerHTML = td3Prcnt;
+    td1.innerHTML = dist;
+    td2.innerHTML = date;
+    td3.innerHTML = prcnt;
 
-    trow.appendChild(td3);
-    trow.appendChild(td2);
     trow.appendChild(td1);
+    trow.appendChild(td2);
+    trow.appendChild(td3);
 
     tbody.appendChild(trow);
 
-
-
     // event listener to the row
     trow.addEventListener('click', async function () {
-        // Perform action based on the clicked row
-        // Example: Log the neighborhood name to the console
         const url = 'neighborhood.html?neighborhood=' + encodeURIComponent(dist);
-        // Redirect the user to the new page
         console.log('Clicked row:', dist);
         window.location.href = url;
-        // Replace the above console.log statement with your desired action
     });
 
 }
@@ -313,15 +255,10 @@ export async function pollutionPercentage() {
                 sand += childSnapshot.val().ToatalOfSandOnRoad;
             });
 
-            // calculate the percentage of each pollution type
-            // concrete = (concrete / await totalData() ) * 100 ;
-            // potholes = (potholes / await totalData() ) * 100 ;
-            // sand = (sand / await totalData() ) * 100 ;
-
             //assign values in the html page
-            document.getElementById('statPotholes').innerHTML = potholes;//.toFixed(2)+ '%';
-            document.getElementById('statSand').innerHTML = sand;//.toFixed(2)+ '%';
-            document.getElementById('statConcrete').innerHTML = concrete;//.toFixed(2)+ '%';
+            document.getElementById('statPotholes').innerHTML = potholes;
+            document.getElementById('statSand').innerHTML = sand;
+            document.getElementById('statConcrete').innerHTML = concrete;
 
         } else {
             alert('nothing found');
@@ -347,21 +284,22 @@ async function album(neighborhood) {
                 const url = values[0];
                 const location = values[1];
 
-                const anchor = document.createElement("a");
-                anchor.href = location;
-                anchor.classList.add("anchor");
-
                 const imgBox = document.createElement("div");
                 imgBox.classList.add("Image-box")
-
+        
                 const image = document.createElement("img");
                 image.src = url;
                 image.alt = "Visual Pollution Image";
                 image.classList.add("inner-image");
-
-                anchor.appendChild(image);
-                imgBox.appendChild(anchor);
+        
+                imgBox.appendChild(image);
                 document.querySelector(".grid-container").appendChild(imgBox);
+
+
+                // event listener to the row
+                imgBox.addEventListener('click', async function () {
+                    popUp(url, location);
+                });
 
             });
         } else {
@@ -372,85 +310,18 @@ async function album(neighborhood) {
     }
 }
 
+function popUp(imageUrl, location){
+
+    document.getElementById('pop-image').style = "display: flex;"; //display window
 
 
+    document.getElementById('close').addEventListener('click', async function () {
+        document.getElementById('pop-image').style = "display: none;";
+    }); //close window btn
 
-export async function staticPage() {
-    const dbRef = ref(db);
-
-
-    try {
-          /*   await get(child(dbRef, "MAKKAH"));
-            var pollution = [];
-    
-            snapshot.forEach(childSnapshot => {
-                pollution.push(childSnapshot.val());
-            });
-    */      const snapshot = await get(child(dbref, "MAKKAH/"));
-        const pollution = [];
-
-        snapshot.forEach(childSnapshot => {
-            pollution.push(childSnapshot.val());
-
-        });
-
-        var labList1 = [];
-        var dataList1 = [];
-        var dataList2 = [];
-        var dataList3 = [];
-        var backgroundColorlist = ['rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)'];
-        var borderColorlist = ['rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)'];
+    document.getElementById('moveing-button').href=location; //location
 
 
-        for (var i = 0; i < pollution.length; i++) {
-            labList1.push(pollution[i].neighborhood)
-            dataList1.push(pollution[i].ToatalOfConcreteBarrier)
-            dataList2.push(pollution[i].ToatalOfPothole)
-            dataList2.push(pollution[i].ToatalOfSandOnRoad)
-        }
+    document.getElementById('inner-pop-image').src = imageUrl; //image
 
-        // Data for the chart (myChart1)
-        var data1 = {
-            labels: labList1,
-            datasets: [{
-                data: dataList1,
-                backgroundColor: backgroundColorlist,
-                borderColor: borderColorlist,
-                borderWidth: 1
-            }]
-        };
-
-        const config1 = {
-            type: 'bar',
-            data: data1,
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        };
-
-        // Get the canvas element
-        var ctx1 = document.getElementById('myChart1').getContext('2d');
-        const chart1 = new Chart(ctx1, config1);
-
-        console.log("Pollution data:", pollution);
-
-
-    }
-
-    catch (error) {
-        console.error(error);
-    }
-
-};
+}

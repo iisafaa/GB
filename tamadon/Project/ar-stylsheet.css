@@ -730,7 +730,7 @@
     left: 86px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
-    color: #5a8b59;
+    color: black;
     font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
@@ -805,7 +805,7 @@
     left: 109px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
-    color: #5a8b59;
+    color: black;
     font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
@@ -883,7 +883,7 @@
     left: 100px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
-    color: #5a8b59;
+    color: black;
     font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
@@ -944,6 +944,7 @@
     width: 100%;
     border-radius: 8px;
     font-family: 'Tajawal', Arial, sans-serif;
+    direction: rtl;
 }
 
 .table-container thead {
@@ -1091,4 +1092,95 @@
     background-color: white;
     border-radius: 5px;
     height: 500px;
+}
+
+/* image pop up window container*/
+
+.image-pop-container {
+
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 150px;
+    left: 550px;
+    background-color: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+
+}
+
+
+
+.pop-img-box{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    left: 110px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.screen .inner-pop-image {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 10px;
+    left: 10px;
+    object-fit: cover;
+}
+
+
+.close {
+    left: 10px;
+    width: 20;
+    height: 20;
+    background-color: transparent;
+    border: none;
+   
+    
+}
+
+.close:hover {
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+
+.move-button{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background-color: #DDE9CD;
+    top: 367px;
+    left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+
+}
+
+.move-button:hover{
+    background-color:#bfd99f;
+    color: #ffffff;
+}
+
+.move-txt{
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 127px;
+    position: fixed;
+    color: black;
+    font-size: 20px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+
 }

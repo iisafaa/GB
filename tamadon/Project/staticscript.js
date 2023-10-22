@@ -189,11 +189,3 @@ export async function totalData() {
         return 0;
     }
 }
-
-
-
-
-
-
-// Call the staticPage function to execute the code
-staticPage();
