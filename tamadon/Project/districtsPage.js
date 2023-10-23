@@ -127,7 +127,7 @@
                         //const name = input.value;
                         doc.autoTable(columns, rows, {
                             styles: {
-                              fillColor: [146,220,135],
+                              fillColor: [69, 166, 85],
                               lineColor: 240, 
                               lineWidth: 1,
                             },
@@ -141,7 +141,7 @@
                             },
                             margin: {top: 260},
                             addPageContent: function(data) {
-                              doc.setTextColor(0,102,51);
+                              doc.setTextColor(0, 1, 0);
                               doc.setFont("times");
                               doc.setFontSize(14);
                               doc.text("Visual pollution report for the neighborhood", 170, 110);
