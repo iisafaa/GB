@@ -99,7 +99,7 @@ export async function genratePDF() {
                           {title: "Neighborhood name", dataKey: "col1"},
                           {title: snapshot.val().neighborhood, dataKey: "col2"}, 
                           {title: "Pollution Rate", dataKey: "col3"},
-                          {title: snapshot.val().PollutionRate, dataKey: "col4"}
+                          {title: percentage +'%', dataKey: "col4"}
                       ];
                       var rows = [
                         {
