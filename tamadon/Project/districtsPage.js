@@ -248,10 +248,6 @@ export async function genratePDF() {
                 // });  
 
 
-            } else {
-
-                alert('No data found');
-                return;
             }
         })
         .catch((error) => {
