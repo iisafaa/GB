@@ -56,6 +56,7 @@ export async function genratePDF() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const neighborhood = urlParams.get('neighborhood');
+    const totalPollution = await totalData();
 
     const dbref = ref(db);
 
@@ -63,8 +64,100 @@ export async function genratePDF() {
         .then((snapshot) => {
             if (snapshot.exists()) {
 
+                const percentage = ((snapshot.val().ToatalOfPothole + snapshot.val().ToatalOfConcreteBarrier + snapshot.val().ToatalOfSandOnRoad) / totalPollution) * 100;
 
-
+                    const doc = new jsPDF({
+                        orientation: "p", //set orientation
+                        unit: "pt", //set unit for document
+                        format: "letter" //set document standard
+                      });
+                      
+                      var btn = document.getElementById("b");
+                      //const input = document.querySelector("input");
+                      const sand = 'Toatal of sand of road',
+                            potholes = 'Toatal of potholes',
+                            Barrier = 'Toatal of concrete barrier',
+                            Dat  = 'Date added';
+                            //date = new Date();
+                      const sizes = {
+                        xs: 10, 
+                        sm : 14, 
+                        p: 16, 
+                        h3: 18, 
+                        h2: 20, 
+                        h1: 22
+                      };
+                      const fonts = {
+                        times: 'Times', 
+                        helvetica: 'Helvetica'
+                      };
+                      
+                      
+                      const margin = 0.5; // inches on a 8.5 x 11 inch sheet.
+                      const verticalOffset = margin;
+                      var columns = [
+                          {title: "Neighborhood name", dataKey: "col1"},
+                          {title: snapshot.val().neighborhood, dataKey: "col2"}, 
+                          {title: "Pollution Rate", dataKey: "col3"},
+                          {title: percentage +'%', dataKey: "col4"}
+                      ];
+                      var rows = [
+                        {
+                          "col1": Barrier, 
+                          "col2": snapshot.val().ToatalOfConcreteBarrier, 
+                          "col3": potholes, 
+                          "col4": snapshot.val().ToatalOfPothole
+                        },
+                          {
+                          "col1": sand, 
+                          "col2": snapshot.val().ToatalOfSandOnRoad, 
+                          "col3": Dat, 
+                          "col4": snapshot.val().DateAdded
+                        }
+                      ];
+                      
+                      
+                      
+                      //btn.addEventListener("click", () => {
+                        //const name = input.value;
+                        doc.autoTable(columns, rows, {
+                            styles: {
+                              fillColor: [69, 166, 85],
+                              lineColor: 240, 
+                              lineWidth: 1,
+                            },
+                            columnStyles: {
+                              col1: {fillColor: false},
+                              col2: {fillColor: false},
+                              col3: {fillColor: false},
+                              col4: {fillColor: false},
+                              col5: {fillColor: false},
+                              col6: {fillColor: false},        
+                            },
+                            margin: {top: 260},
+                            addPageContent: function(data) {
+                              doc.setTextColor(0, 1, 0);
+                              doc.setFont("times");
+                              doc.setFontSize(14);
+                              doc.text("Visual pollution report for the neighborhood", 170, 110);
+                              doc.text("of Makkah Al-Mukarramah", 210, 135);
+                              doc.text("This report was issued by the Ministry of Municipality, Kingdom of Saudi Arabia", 70, 395);
+                      
+                              doc.text("Name:", 55, 700);
+                              doc.text("_________________", 55, 715);
+                      
+                              doc.text("Signature:", 448, 700);
+                              doc.text("_________________", 448, 715);
+                      
+                            }
+                        });
+                        
+                        doc.save(`التلوث البصري.pdf`);
+                        
+                     // });  
+                      
+                      
+                } else {
                 const doc = new jsPDF({
                     orientation: "p", //set orientation
                     unit: "pt", //set unit for document
@@ -98,7 +191,7 @@ export async function genratePDF() {
                     { title: "Neighborhood name", dataKey: "col1" },
                     { title: snapshot.val().neighborhood, dataKey: "col2" },
                     { title: "Pollution Rate", dataKey: "col3" },
-                    { title: snapshot.val().PollutionRate, dataKey: "col4" }
+                    { title: percentage + '%', dataKey: "col4" }
                 ];
                 var rows = [
                     {
@@ -156,10 +249,6 @@ export async function genratePDF() {
                 // });  
 
 
-            } else {
-
-                alert('No data found');
-                return;
             }
         })
         .catch((error) => {
@@ -184,14 +273,18 @@ function addItemToTable(dist, date, prcnt) {
 
     tbody.appendChild(trow);
 
-    // event listener to the row
-    trow.addEventListener('click', async function () {
-        const url = 'neighborhood.html?neighborhood=' + encodeURIComponent(dist);
-        console.log('Clicked row:', dist);
-        window.location.href = url;
-    });
-
-}
+        // event listener to the row
+        trow.addEventListener('click', async function() {
+            // Perform action based on the clicked row
+            // Example: Log the neighborhood name to the console
+            const url = 'neighborhood.html?neighborhood=' + encodeURIComponent(dist);
+            // Redirect the user to the new page
+            console.log('Clicked row:', dist);
+            window.location.href = url;
+            // Replace the above console.log statement with your desired action
+        });
+        
+    }
 
 export async function FindData() {
     tbody.innerHTML = "";
