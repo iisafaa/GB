@@ -162,8 +162,30 @@ var data3 = {
 
 };
 
+export async function totalData() {
+    try {
+        const snapshot = await get(child(dbref, "MAKKAH/"));
+        let totalConcrete = 0;
+        let totalSand = 0;
+        let totalPotholes = 0;
 
+        if (snapshot.exists()) {
+        snapshot.forEach((childSnapshot) => {
 
+            totalConcrete += childSnapshot.val().ToatalOfConcreteBarrier;
+            totalPotholes += childSnapshot.val().ToatalOfPothole;
+            totalSand += childSnapshot.val().ToatalOfSandOnRoad;
 
-// Call the staticPage function to execute the code
-staticPage();
+        });
+        document.getElementById('statConcrete').innerHTML= totalConcrete;
+        document.getElementById('statSand').innerHTML= totalSand;
+        document.getElementById('statPotholes').innerHTML= totalPotholes;
+        } else {
+        alert('nothing found');
+        return 0;
+        }
+    } catch (error) {
+        alert(error);
+        return 0;
+    }
+}

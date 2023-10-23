@@ -18,19 +18,14 @@
 
     <script type="module">
         // Import the function from the module script
-        import { staticPage } from './staticscript.js';
-
-        document.addEventListener('DOMContentLoaded', function () {
-            // Call the imported function
-            staticPage();
-        });
-
-        // Import the function from the module script
-        import { pollutionPercentage} from './districtsPage.js';
+        import {staticPage,totalData } from './staticscript.js';
+        import {pollutionPercentage } from './districtsPage.js';
 
         document.addEventListener('DOMContentLoaded', function () {
             // Call the imported function
             pollutionPercentage();
+            staticPage();
+            totalData();
         });
 
     </script>
@@ -67,7 +62,8 @@
 
                 <div class="text-wrapper-3" data-lang="total_potholes">اجمالي الحفر</div>
                 <div class="text-wrapper-4" id="statPotholes"></div>
-                <div class="settings-wrapper"><img class="settings" src="images/patholes.png" /></div>
+                    <img class="settings" src="images/patholes.png" />
+                
 
 
                 <div class="text-wrapper-66" data-lang="total_concrete">اجمالي الصبات</div>
@@ -76,7 +72,7 @@
 
                 <div class="text-wrapper-8" data-lang="total_sand">اجمالي الرمل <br>على الطريق</div>
                 <div class="text-wrapper-7" id="statSand"></div>
-                <div class="overlap-group"><img class="x" src="images/sand.png" /></div>
+                <img class="x" src="images/sand.png" />
             </div>
         </div>
 
@@ -96,8 +92,8 @@
         <div class="sidebar"><!-- Side bar  -->
 
             <div class="overlap-3">
-                <div class="tammadon-t">تمدُن</div>
                 <img class="tammadon" src="images/Tammadon.png" />
+                <div class="tammadon-t" data-lang="tammadont">تمدُن</div>
                 <div
                     style="width: 240px; height: 0px; left: 5px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
                 </div>

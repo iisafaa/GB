@@ -1,8 +1,8 @@
-
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
     width: 7px;
 }
+
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -78,7 +78,7 @@
     width: 1194px;
     height: 190px;
     top: 135px;
-    left: 45px;
+    left: 34px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -218,25 +218,15 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
-    left: 13px;
-}
-
-.screen .settings-wrapper {
-    position: absolute;
-    width: 109px;
-    height: 109px;
     top: 40px;
-    left: 200px;
-    background-image: url(ell.png);
-    background-size: 100%;
-
+    left: 650px;
 }
+
 
 .screen .settings {
     height: 75px;
-    top: 10px;
-    left: 15px;
+    top: 50px;
+    left: 180px;
     position: absolute;
     width: 75px;
 }
@@ -363,13 +353,24 @@
 .screen .tammadon {
 
     position: absolute;
-    width: 92px;
-    height: 81px;
+    width: 82px;
+    height: 71px;
     top: 18px;
-    left: 90px;
+    right: 25px;
     /*object-fit: cover;*/
 }
 
+.tammadon-t {
+    font-family: "Tajawal-Bold", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 24px;
+    direction: rtl;
+    position: relative;
+    font-family: 'Tajawal';
+    right: 125px;
+    top: 60px;
+}
 
 .screen .Side-button1 {
     position: relative;
@@ -458,7 +459,7 @@
 
 
 
-.buttons{
+.buttons {
     position: fixed;
     display: grid;
     grid-template-columns: auto auto;
@@ -467,7 +468,7 @@
     width: 249px;
     height: 20px;
     top: 790px;
-    
+
 }
 
 
@@ -486,6 +487,7 @@
     background-color: #DDE9CD;
     color: #ffffff;
 }
+
 .screen .engl {
     display: inline-block;
     font-family: "Tajawal-Medium", Helvetica;
@@ -702,7 +704,7 @@
     height: 128px;
     top: 10px;
     left: 845px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -721,10 +723,25 @@
     font-family: 'Tajawal'
 }
 
+.screen .concretNumber2 {
+    position: absolute;
+    width: 193px;
+    top: 70px;
+    left: 86px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOfConcret {
     position: absolute;
-    width: 82px;
-    top: 77px;
+    width: 70px;
+    top: 70px;
     left: 234px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
@@ -763,7 +780,7 @@
     height: 128px;
     top: 10px;
     left: 444px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -782,10 +799,25 @@
     font-family: 'Tajawal'
 }
 
+.screen .sandNum2 {
+    width: 193px;
+    top: 70px;
+    left: 109px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOFSand {
     position: absolute;
     width: 178px;
-    top: 82px;
+    top: 70px;
     left: 138px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
@@ -826,7 +858,7 @@
     height: 128px;
     top: 10px;
     left: 43px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -845,10 +877,25 @@
     font-family: 'Tajawal'
 }
 
+.screen .patholesNum2 {
+    width: 193px;
+    top: 70px;
+    left: 100px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOfPatholes {
     position: absolute;
     width: 178px;
-    top: 82px;
+    top: 70px;
     left: 138px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
@@ -887,6 +934,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    direction: rtl;
 }
 
 .table-container table {
@@ -896,6 +944,7 @@
     width: 100%;
     border-radius: 8px;
     font-family: 'Tajawal', Arial, sans-serif;
+    direction: rtl;
 }
 
 .table-container thead {
@@ -948,7 +997,6 @@
     height: 157px;
     top: 0;
     left: 0;
-    background-color: #ffffff;
     border-radius: 10px;
 }
 
@@ -971,6 +1019,7 @@
     gap: 15px 15px;
     padding: 5px;
     width: 1185px;
+    direction: rtl;
 }
 
 .screen .Image-box {
@@ -987,7 +1036,7 @@
     height: 160px;
     top: 10px;
     left: 10px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /*           Charts                */
@@ -1003,10 +1052,10 @@
 
 
 
-.chart-grid{
+.chart-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 15px 15px;
+    gap: 25px 25px;
     padding: 5px;
     width: 1185px;
     height: 500px;
@@ -1017,7 +1066,7 @@
 /* Apply CSS styles to the chart container */
 .chart-container {
     display: inline-block;
-    width: 500;
+    width: 343px;
     /* Adjust the width and margin as needed */
     margin-right: 10px;
     /* Adjust the margin between charts */
@@ -1028,14 +1077,14 @@
     border-color: transparent;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
     text-align: center;
-  
+
 }
 
 .chart-title {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
-    
+
 }
 
 /* Apply CSS styles to chart elements */
@@ -1043,4 +1092,95 @@
     background-color: white;
     border-radius: 5px;
     height: 500px;
+}
+
+/* image pop up window container*/
+
+.image-pop-container {
+
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 150px;
+    left: 550px;
+    background-color: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+
+}
+
+
+
+.pop-img-box{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    left: 110px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.screen .inner-pop-image {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 10px;
+    left: 10px;
+    object-fit: cover;
+}
+
+
+.close {
+    left: 10px;
+    width: 20;
+    height: 20;
+    background-color: transparent;
+    border: none;
+   
+    
+}
+
+.close:hover {
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+
+.move-button{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background-color: #DDE9CD;
+    top: 367px;
+    left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+
+}
+
+.move-button:hover{
+    background-color:#bfd99f;
+    color: #ffffff;
+}
+
+.move-txt{
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 127px;
+    position: fixed;
+    color: black;
+    font-size: 20px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+
 }

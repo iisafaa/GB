@@ -1,4 +1,3 @@
-
 /* === Custom Scroll Bar CSS === */
 ::-webkit-scrollbar {
     width: 7px;
@@ -17,7 +16,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #5B8B5A;
 }
+/* === Custom Scroll Bar CSS === */
+/* Add your custom scrollbar styles here */
 
+/* Common styles for different screen sizes */
 .screen {
     background-color: #fafafa;
     display: flex;
@@ -28,9 +30,26 @@
 
 .screen .div {
     background-color: #fafafa;
-    width: 1512px;
+    max-width: 1512px;
+    width: 100%;
     height: 982px;
     position: relative;
+}
+
+/* Add your other common styles here */
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .screen .div {
+        max-width: 100%;
+    }
+
+    /* Add more responsive styles here */
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 1200px) {
+    /* Add specific styles for larger screens here */
 }
 
 /* up bar */
@@ -46,7 +65,7 @@
     position: relative;
     width: 1194px;
     height: 85px;
-    left: 280px;
+    left: 275px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -171,15 +190,15 @@
     height: 128px;
     top: 10px;
     left: 845px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
 }
 
 .screen .concretNumber {
     position: absolute;
     width: 193px;
-    top: 35px;
-    left: 123px;
+    top: 25px;
+    left: 44px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
     color: #5a8b59;
@@ -190,11 +209,26 @@
     font-family: 'Tajawal'
 }
 
+.screen .concretNumber2 {
+    position: absolute;
+    width: 193px;
+    top: 70px;
+    left: 26px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOfConcret {
     position: absolute;
     width: 82px;
-    top: 77px;
-    left: 234px;
+    top: 71px;
+    left: 55px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
@@ -232,14 +266,14 @@
     height: 128px;
     top: 10px;
     left: 444px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
 }
 
 .screen .sandNum {
     width: 193px;
     top: 25px;
-    left: 123px;
+    left: 113px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
     color: #5a8b59;
@@ -251,11 +285,26 @@
     font-family: 'Tajawal'
 }
 
+.screen .sandNum2 {
+    width: 193px;
+    top: 70px;
+    left: 92px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOFSand {
     position: absolute;
     width: 178px;
-    top: 82px;
-    left: 138px;
+    top: 71px;
+    left: -44px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
@@ -295,14 +344,15 @@
     height: 128px;
     top: 10px;
     left: 43px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
 }
+
 
 .screen .patholesNum {
     width: 193px;
     top: 25px;
-    left: 123px;
+    left: 40px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
     color: #5a8b59;
@@ -314,11 +364,26 @@
     font-family: 'Tajawal'
 }
 
+.screen .patholesNum2 {
+    width: 193px;
+    top: 70px;
+    left: 5px;
+    font-family: "Tajawal-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+
 .screen .NumOfPatholes {
     position: absolute;
     width: 178px;
-    top: 82px;
-    left: 138px;
+    top: 71px;
+    left: -49px;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
@@ -375,22 +440,23 @@
 .screen .tammadon {
 
     position: absolute;
-    width: 92px;
-    height: 81px;
+    width: 82px;
+    height: 71px;
     top: 18px;
-    left: 75px;
+    left: 25px;
     /*object-fit: cover;*/
 }
 
-.tammadon-t{
-    font-family: "Tajawal-Medium", Helvetica;
+.tammadon-t {
+    font-family: "Tajawal-Bold", Helvetica;
     font-weight: 500;
     color: #000000;
     font-size: 24px;
     direction: rtl;
     position: relative;
     font-family: 'Tajawal';
-    right: 30px;
+    right: 20px;
+    top: 60px;
 }
 
 .screen .Side-button1,
@@ -411,7 +477,7 @@
 .screen .Side-button2 .element-plus {
     width: 28px;
     height: 28px;
-   
+
 }
 
 .screen .Side-button1:hover,
@@ -423,7 +489,8 @@
 .screen .text-wrapper-12,
 .screen .text-wrapper-13 {
     /* font-family: "Tajawal-Medium", Helvetica; */
-    width: 180px; /* Adjust the width as needed */
+    width: 180px;
+    /* Adjust the width as needed */
     font-weight: 500;
     color: #5b8b5a;
     font-size: 20px;
@@ -432,14 +499,14 @@
     white-space: nowrap;
     direction: ltr;
     font-family: 'Tajawal';
-    
+
 }
 
 
 
 
 
-.buttons{
+.buttons {
     position: fixed;
     display: grid;
     grid-template-columns: auto auto;
@@ -448,7 +515,7 @@
     width: 249px;
     height: 20px;
     top: 790px;
-    
+
 }
 
 
@@ -467,6 +534,7 @@
     background-color: #DDE9CD;
     color: #ffffff;
 }
+
 .screen .ar {
     display: inline-block;
     font-family: "Tajawal-Medium", Helvetica;
@@ -491,6 +559,7 @@
     justify-content: space-between;
     border: #ffffff;
 }
+
 .screen .Side-button4:hover {
     background-color: #DDE9CD;
     color: #ffffff;
@@ -518,7 +587,7 @@
     width: 1196px;
     height: 797px;
     top: 148px;
-    left: 290px;
+    left: 275px;
     border-radius: 10px;
 }
 
@@ -539,7 +608,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    left: 870px;
+    left: 50px;
     top: 62px;
 
 }
@@ -571,7 +640,8 @@
 
     padding: 9px 4px 9px 40px;
     background: transparent url("search-icon.png") no-repeat 13px center;
-    text-align: right;
+    text-align: left;
+
 
 }
 
@@ -583,7 +653,7 @@
     width: 86px;
     height: 43px;
     top: 62px;
-    left: 763px;
+    left: 350px;
     background-color: #dde9cd;
     border-radius: 8px;
     border: none;
@@ -603,7 +673,7 @@
     width: 27px;
     height: 23px;
     top: 10px;
-    left: 13px;
+    left: 33px;
     font-family: "Tajawal-Regular", Helvetica;
     font-weight: 400;
     color: #5a8b59;
@@ -620,7 +690,7 @@
     width: 20px;
     height: 20px;
     top: 11px;
-    left: 46px;
+    left: 5px;
 }
 
 
@@ -638,7 +708,7 @@
     width: 179px;
     height: 26px;
     top: 2px;
-    right: 45px;
+    right: -20px;
     /*font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #5a8b59;
@@ -661,7 +731,7 @@
     width: 1194px;
     height: 190px;
     top: 135px;
-    left: 285px;
+    left: 275px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -686,7 +756,7 @@
 
 .screen .text-wrapper-3 {
     top: 60px;
-    left: 85px;
+    left: 140px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
@@ -727,7 +797,7 @@
 
 .screen .text-wrapper-66 {
     top: 60px;
-    left: 910px;
+    left: 970px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
@@ -740,22 +810,12 @@
     font-family: 'Tajawal'
 }
 
-.screen .overlap {
-    position: absolute;
-    width: 109px;
-    height: 109px;
-    top: 40px;
-    left: 1043px;
-    background-image: url(ell.png);
-    background-size: 100% 100%;
-}
-
 .screen .settings-check {
     height: 90px;
-    top: 10px;
-    left: 12px;
+    top: 45px;
+    right: 230px;
     position: absolute;
-    width: 90px;
+
 }
 
 .screen .text-wrapper-7 {
@@ -773,7 +833,7 @@
 
 .screen .text-wrapper-8 {
     top: 60px;
-    left: 480px;
+    left: 540px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
@@ -786,40 +846,22 @@
     font-family: 'Tajawal'
 }
 
-.screen .overlap-group {
-    position: absolute;
-    width: 109px;
-    height: 109px;
-    top: 40px;
-    left: 620px;
-    background-image: url(ell.png);
-    background-size: 100% 100%;
 
-}
 
 .screen .x {
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
-    left: 13px;
-}
-
-.screen .settings-wrapper {
-    position: absolute;
-    width: 109px;
-    height: 109px;
     top: 40px;
-    left: 200px;
-    background-image: url(ell.png);
-    background-size: 100%;
-
+    right: 660px;
 }
+
+
 
 .screen .settings {
     height: 75px;
-    top: 10px;
-    left: 15px;
+    top: 60px;
+    left: 60px;
     position: absolute;
     width: 75px;
 }
@@ -837,27 +879,6 @@
     position: absolute;
     direction: rtl;
     font-family: 'Tajawal'
-}
-
-
-.screen .between-erea-rec {
-    position: absolute;
-    width: 1196px;
-    height: max-content;
-    top: 348px;
-    left: 285px;
-}
-
-
-
-.chart-grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 15px 15px;
-    padding: 5px;
-    width: 1185px;
-    height: 500px;
-
 }
 
 
@@ -911,62 +932,6 @@
 
 
 
-/*           Charts                */
-
-
-.screen .between-erea-rec {
-    position: absolute;
-    width: 1196px;
-    height: max-content;
-    top: 348px;
-    left: 290px;
-}
-
-
-
-.chart-grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 15px 15px;
-    padding: 5px;
-    width: 1185px;
-    height: 500px;
-
-}
-
-
-/* Apply CSS styles to the chart container */
-.chart-container {
-    display: inline-block;
-    width: 500;
-    /* Adjust the width and margin as needed */
-    margin-right: 10px;
-    /* Adjust the margin between charts */
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    border-color: transparent;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
-    text-align: center;
-  
-}
-
-.chart-title {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    
-}
-
-/* Apply CSS styles to chart elements */
-.chartjs-render-monitor {
-    background-color: white;
-    border-radius: 5px;
-    height: 500px;
-}
-
-
 
 
 
@@ -975,7 +940,7 @@
     width: 1196px;
     height: 597px;
     top: 148px;
-    left: 286px;
+    left: 275px;
     border-radius: 10px;
 }
 
@@ -985,7 +950,6 @@
     height: 157px;
     top: 0;
     left: 0;
-    background-color: #ffffff;
     border-radius: 10px;
 }
 
@@ -1000,7 +964,7 @@
     width: 1196px;
     height: max-content;
     top: 348px;
-    left: 286px;
+    left: 275px;
 }
 
 .screen .grid-container {
@@ -1025,8 +989,10 @@
     height: 160px;
     top: 10px;
     left: 10px;
-    object-fit: contain;
+    object-fit: cover;
 }
+
+
 
 /*           Charts                */
 
@@ -1036,18 +1002,140 @@
     width: 1196px;
     height: max-content;
     top: 348px;
-    left: 286px;
+    left: 275px;
 }
 
 
 
-.chart-grid{
+.chart-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 15px 15px;
+    gap: 25px 25px;
     padding: 5px;
     width: 1185px;
     height: 500px;
 
 }
 
+
+/* Apply CSS styles to the chart container */
+.chart-container {
+    display: inline-block;
+    width: 343px;
+    /* Adjust the width and margin as needed */
+    margin-right: 10px;
+    /* Adjust the margin between charts */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0)*/
+    text-align: center;
+
+}
+
+.chart-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+/* Apply CSS styles to chart elements */
+.chartjs-render-monitor {
+    background-color: white;
+    border-radius: 5px;
+    height: 500px;
+}
+
+/* image pop up window container*/
+
+.image-pop-container {
+
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 150px;
+    left: 550px;
+    background-color: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+
+}
+
+
+
+.pop-img-box{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    left: 110px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.screen .inner-pop-image {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 10px;
+    left: 10px;
+    object-fit: cover;
+}
+
+
+.close {
+    left: 10px;
+    width: 20;
+    height: 20;
+    background-color: transparent;
+    border: none;
+   
+    
+}
+
+.close:hover {
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+
+.move-button{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background-color: #DDE9CD;
+    top: 367px;
+    left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+
+}
+
+.move-button:hover{
+    background-color:#bfd99f;
+    color: #ffffff;
+}
+
+.move-txt{
+    display: inline-block;
+    font-family: "Tajawal-Medium", Helvetica;
+    font-weight: 500;
+    width: 127px;
+    position: fixed;
+    color: black;
+    font-size: 20px;
+    letter-spacing: -0.52px;
+    line-height: 21.8px;
+    white-space: nowrap;
+    direction: rtl;
+    font-family: 'Tajawal'
+
+}

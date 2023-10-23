@@ -50,6 +50,8 @@
             <div class="sidebar">
                 <div class="overlap-3">
                     <img class="tammadon" src="images/Tammadon.png" />
+                    <div class="tammadon-t" data-lang="tammadont">تمدُن</div>
+
                     <div
                         style="width: 240px; height: 0px; left: 5px; top: 119px; position: absolute; border: 0.50px rgba(139, 180, 84, 0.44) solid">
                     </div>
@@ -59,15 +61,15 @@
                     <span class="text-wrapper-12" data-lang="statics" style="left: 50px;">احصائيات</span>
                     <img src="images/num.png" alt="Image" class="chart">
                 </button>
-    
-    
+
+
                 <button onclick="window.location.href='discritsPage.html';" , class="Side-button2">
-                    <span class="text-wrapper-13" data-lang="district" >الأحياء</span>
+                    <span class="text-wrapper-13" data-lang="district">الأحياء</span>
                     <img src="images/discrits.png" alt="Image" class="element-plus">
                 </button>
-    
-    
-    
+
+
+
                 <div class="buttons">
                     <button value="english" , id="eng" , class="Side-button3">
                         <span class="engl">English</span></button>
@@ -85,13 +87,13 @@
                     <!--search box-->
                     <div class="searchbar">
                         <form class="search">
-                            <input class="search" data-lang="search" type="search" placeholder=".....بحث ">
+                            <input class="search" type="search" placeholder="search.....">
                         </form>
                     </div>
 
                     <!--filter button-->
                     <button class="button-filter">
-                        <span class="text-wrapper200" data-lang="filter">فرز</span>
+                        <div class="text-wrapper200" data-lang="filter">فرز</div>
                         <img src="images/filter.png" alt="Image" class="filter-search">
                     </button>
 
@@ -100,9 +102,9 @@
                         <table>
 
                             <thead>
-                                <th data-lang="table-left">نسبة التلوث</th>
-                                <th data-lang="table-center">تاريخ الإضافة</th>
-                                <th data-lang="table-right">اسم الحي</th>
+                                <th data-lang="dist_name">اسم الحي</th>
+                                <th data-lang="creation_date">تاريخ الإضافة</th>
+                                <th data-lang="percent">نسبة التلوث </th>
                             </thead>
 
                             <tbody id="tbody1" class="tbody">
