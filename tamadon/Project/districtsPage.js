@@ -56,6 +56,7 @@ export async function genratePDF() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const neighborhood = urlParams.get('neighborhood');
+    const totalPollution = await totalData();
 
     const dbref = ref(db);
 
@@ -63,7 +64,7 @@ export async function genratePDF() {
         .then((snapshot) => {
             if (snapshot.exists()) {
 
-
+                const percentage = ((snapshot.val().ToatalOfPothole + snapshot.val().ToatalOfConcreteBarrier + snapshot.val().ToatalOfSandOnRoad) / totalPollution) * 100;
 
                     const doc = new jsPDF({
                         orientation: "p", //set orientation
@@ -190,7 +191,7 @@ export async function genratePDF() {
                     { title: "Neighborhood name", dataKey: "col1" },
                     { title: snapshot.val().neighborhood, dataKey: "col2" },
                     { title: "Pollution Rate", dataKey: "col3" },
-                    { title: snapshot.val().PollutionRate, dataKey: "col4" }
+                    { title: percentage + '%', dataKey: "col4" }
                 ];
                 var rows = [
                     {
