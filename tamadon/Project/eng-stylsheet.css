@@ -818,6 +818,32 @@
 
 }
 
+
+.screen .text-wrapper-4 {
+    top: 100px;
+    left: 180px;
+    position: absolute;
+    /* font-family: "Inter-Bold", Helvetica;*/
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-family: 'Tajawal'
+}
+
+.screen .text-wrapper-5 {
+    top: 100px;
+    left: 1000px;
+    position: absolute;
+    /* font-family: "Inter-Bold", Helvetica;*/
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-family: 'Tajawal'
+}
 .screen .text-wrapper-7 {
     top: 115px;
     left: 560px;
