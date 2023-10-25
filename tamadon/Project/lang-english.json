@@ -6,13 +6,13 @@
   "title": "Statistics",
   "total_potholes": "Total Potholes",
   "result_potholes": " Pothole",
-  "total_sand": "Total Sand on the Road",
-  "result_sand": "  Sand on the road",
-  "total_concrete": "Total Concrete",
+  "total_sand": "Total Sand on Road",
+  "result_sand": "  Sand on road",
+  "total_concrete": "Total Concrete Barriers",
   "result_concrete": " Concrete",
-  "total_concrete-makkah": "Total Concrete in makkah",
-  "total_patholes-makkah": "Total patholes in makkah",
-  "total_sand-makkah": "Total sand on road in makkah",
+  "total_concrete-makkah": "Total Concrete Barriers in Makkah",
+  "total_patholes-makkah": "Total Patholes in Makkah",
+  "total_sand-makkah": "Total Sand on road in Makkah",
   "makkah-statics": "Mecca region statistics",
 
   "title2": "District",
@@ -21,5 +21,6 @@
   "dist_name": " District Name",
   "creation_date": "Creation Date",
   "percent": "Pollution Precentage",
-  "location":"Location"
+  "location":"Location",
+  "percent-dis-total":"Total percentage of neighborhoods covered"
 }

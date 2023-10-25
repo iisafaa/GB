@@ -48,16 +48,7 @@ export async function staticPage() {
         var dataList1 = [];
         var dataList2 = [];
         var dataList3 = [];
-        var backgroundColorlist = ['rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)'];
-        var borderColorlist = ['rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)'];
+        
         for (var i = 0; i < pollution.length; i++) {
             labList1.push(pollution[i].neighborhood)
             dataList1.push(pollution[i].ToatalOfConcreteBarrier)
@@ -67,11 +58,11 @@ export async function staticPage() {
 
         // Data for the chart (myChart1)
         var data1 = {
-            labels: labList1,
+            labels: labList1, 
             datasets: [{
                 data: dataList1,
-                backgroundColor: backgroundColorlist,
-                borderColor: borderColorlist,
+                backgroundColor: 'rgb(199, 0, 57)',
+                borderColor: 'rgb(199, 0, 57)',
                 borderWidth: 1
             }]
         };
@@ -97,8 +88,8 @@ export async function staticPage() {
             labels: labList1,
             datasets: [{
                 data: dataList2,
-                backgroundColor: backgroundColorlist,
-                borderColor: borderColorlist,
+                backgroundColor: 'rgb(25, 38, 85)',
+                borderColor: 'rgb(25, 38, 85)',
                 borderWidth: 1
             }]
         };
@@ -125,8 +116,8 @@ export async function staticPage() {
             labels: labList1,
             datasets: [{
                 data: dataList3,
-                backgroundColor: backgroundColorlist,
-                borderColor: borderColorlist,
+                backgroundColor: 'rgb(225, 170, 116)',
+                borderColor: 'rgb(225, 170, 116)',
                 borderWidth: 1
             }]
         };

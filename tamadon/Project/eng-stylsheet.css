@@ -33,7 +33,7 @@
     max-width: 1512px;
     width: 100%;
     height: 982px;
-    position: relative;
+    position: absolute;
 }
 
 /* Add your other common styles here */
@@ -754,25 +754,11 @@
     object-fit: cover;
 }
 
-.screen .text-wrapper-3 {
-    top: 60px;
-    left: 140px;
-    /* font-family: "Tajawal-Medium", Helvetica;*/
-    font-weight: 500;
-    color: #000000;
-    font-size: 18px;
-    text-align: left;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    direction: rtl;
-    font-family: 'Tajawal'
-}
 
-
+/*concrete*/
 .screen .text-wrapper-66 {
     top: 60px;
-    left: 970px;
+    left: 150px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
     font-weight: 500;
     color: #000000;
@@ -786,29 +772,20 @@
 }
 
 .screen .settings-check {
+  
     height: 90px;
-    top: 45px;
-    right: 230px;
+    top: 40px;
+    left: 60px;
     position: absolute;
+    width: 90px;
 
 }
 
-.screen .text-wrapper-4 {
-    top: 100px;
-    left: 180px;
-    position: absolute;
-    /* font-family: "Inter-Bold", Helvetica;*/
-    font-weight: 700;
-    color: #000000;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-    font-family: 'Tajawal'
-}
 
 .screen .text-wrapper-5 {
+
     top: 100px;
-    left: 1000px;
+    left: 200px;
     position: absolute;
     /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
@@ -817,10 +794,16 @@
     letter-spacing: 0;
     line-height: normal;
     font-family: 'Tajawal'
+   
 }
+
+
+
+/* sand on road*/
 .screen .text-wrapper-7 {
+   
     top: 100px;
-    left: 600px;
+    left: 1030px;
     position: absolute;
     /* font-family: "Inter-Bold", Helvetica;*/
     font-weight: 700;
@@ -831,6 +814,34 @@
     font-family: 'Tajawal'
 }
 .screen .text-wrapper-8 {
+
+    top: 60px;
+    left: 970px;
+    /* font-family: "Tajawal-Medium", Helvetica;*/
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    direction: rtl;
+    font-family: 'Tajawal'
+}
+.screen .x {
+
+    height: 90px;
+    width: 90px;
+    top: 40px;
+    right: 230px;
+    position: absolute;
+
+}
+
+
+/* pothols*/
+.screen .text-wrapper-3 {
+   
     top: 60px;
     left: 540px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
@@ -845,25 +856,30 @@
     font-family: 'Tajawal'
 }
 
+.screen .text-wrapper-4 {
+    top: 100px;
+    left: 580px;
+    position: absolute;
+    /* font-family: "Inter-Bold", Helvetica;*/
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-family: 'Tajawal'
+   
+}
 
-
-.screen .x {
+.screen .settings {
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 40px;
+    top: 50px;
     right: 660px;
 }
 
 
 
-.screen .settings {
-    height: 75px;
-    top: 60px;
-    left: 60px;
-    position: absolute;
-    width: 75px;
-}
 
 .screen .statetext {
     top: 22px;

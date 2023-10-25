@@ -21,6 +21,7 @@
   "dist_name": "اسم الحي",
   "creation_date": "تاريخ الإضافة",
   "percent": "نسبة التلوث",
-  "location":"الموقع"
+  "location":"الموقع",
+  "percent-dis-total":"مجموع نسبة الأحياء التي تم تغطيتها"
 
 }
