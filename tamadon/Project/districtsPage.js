@@ -231,8 +231,8 @@ export async function genratePDF() {
                         doc.setTextColor(0, 102, 51);
                         doc.setFont("times");
                         doc.setFontSize(14);
-                        doc.text("Visual pollution report for the neighborhood", 170, 110);
-                        doc.text("of Makkah Al-Mukarramah", 210, 135);
+                        doc.text("Visual pollution report for "+ snapshot.val().neighborhood+" neighborhood", 170, 110);
+                        doc.text("in Makkah Al-Mukarramah", 210, 135);
                         doc.text("This report was issued by the Ministry of Municipality, Kingdom of Saudi Arabia", 70, 395);
 
                         doc.text("Name:", 55, 700);
