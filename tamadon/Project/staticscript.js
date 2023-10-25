@@ -56,6 +56,7 @@ export async function staticPage() {
             dataList3.push(pollution[i].ToatalOfSandOnRoad)
         }
 
+        
         // Data for the chart (myChart1)
         var data1 = {
             labels: labList1, 
@@ -73,7 +74,13 @@ export async function staticPage() {
             options: {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        suggestedMin: 0, // Minimum value
+                        suggestedMax: 100, // Maximum value (adjust as needed)
+                        
+                        ticks: {
+                            stepSize: 5 // Add this line to set the step value to 5
+                        }
                     }
                 }
             }
@@ -100,8 +107,15 @@ export async function staticPage() {
             options: {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        suggestedMin: 0, // Minimum value
+                        suggestedMax: 100, // Maximum value (adjust as needed)
+                        
+                        ticks: {
+                            stepSize: 5 // Add this line to set the step value to 5
+                        }
                     }
+                    
                 }
             }
         };
@@ -128,7 +142,13 @@ export async function staticPage() {
             options: {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        suggestedMin: 0, // Minimum value
+                        suggestedMax: 100, // Maximum value (adjust as needed)
+                        
+                        ticks: {
+                            stepSize: 5 // Add this line to set the step value to 5
+                        }
                     }
                 }
             }
@@ -145,6 +165,7 @@ export async function staticPage() {
         console.error(error);
     }
 }; 
+
 
 export async function totalData() {
     try {
