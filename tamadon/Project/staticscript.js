@@ -76,7 +76,7 @@ export async function staticPage() {
                     y: {
                         beginAtZero: true,
                         suggestedMin: 0, // Minimum value
-                        suggestedMax: 100, // Maximum value (adjust as needed)
+                        suggestedMax: 50, // Maximum value (adjust as needed)
                         
                         ticks: {
                             stepSize: 5 // Add this line to set the step value to 5
@@ -109,7 +109,7 @@ export async function staticPage() {
                     y: {
                         beginAtZero: true,
                         suggestedMin: 0, // Minimum value
-                        suggestedMax: 100, // Maximum value (adjust as needed)
+                        suggestedMax: 50, // Maximum value (adjust as needed)
                         
                         ticks: {
                             stepSize: 5 // Add this line to set the step value to 5
@@ -144,7 +144,7 @@ export async function staticPage() {
                     y: {
                         beginAtZero: true,
                         suggestedMin: 0, // Minimum value
-                        suggestedMax: 100, // Maximum value (adjust as needed)
+                        suggestedMax: 50, // Maximum value (adjust as needed)
                         
                         ticks: {
                             stepSize: 5 // Add this line to set the step value to 5
