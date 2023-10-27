@@ -20,7 +20,7 @@
   "filter": "filter",
   "dist_name": " District Name",
   "creation_date": "Creation Date",
-  "percent": "Pollution Precentage",
+  "percent": "Pollution Precentage *",
   "location":"Location",
-  "percent-dis-total":"Total percentage of neighborhoods covered"
+  "percent-dis-total":"*Total percentage of neighborhoods covered"
 }

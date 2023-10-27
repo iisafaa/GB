@@ -1188,3 +1188,11 @@ left: 15px;
     font-family: 'Tajawal'
 
 }
+
+.explaination{
+    position: absolute;
+    top: 382px;
+    right: 13px;
+    font-size: medium;
+    font-family: "Tajawal-Regular", Helvetica;
+}
