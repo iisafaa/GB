@@ -62,10 +62,9 @@ export async function staticPage() {
             labels: labList1, 
             datasets: [{
                 data: dataList1,
-                backgroundColor: 'rgb(199, 0, 57)',
+                backgroundColor: 'rgb(199, 0, 57,0.5)',
                 borderColor: 'rgb(199, 0, 57)',
-                borderWidth: 1
-            }]
+               }]
         };
 
         const config1 = {
@@ -95,10 +94,8 @@ export async function staticPage() {
             labels: labList1,
             datasets: [{
                 data: dataList2,
-                backgroundColor: 'rgb(25, 38, 85)',
-                borderColor: 'rgb(25, 38, 85)',
-                borderWidth: 1
-            }]
+                backgroundColor: 'rgb(25, 38, 85,0.8)',
+                }]
         };
 
         const config2 = {
@@ -130,9 +127,7 @@ export async function staticPage() {
             labels: labList1,
             datasets: [{
                 data: dataList3,
-                backgroundColor: 'rgb(225, 170, 116)',
-                borderColor: 'rgb(225, 170, 116)',
-                borderWidth: 1
+                backgroundColor: 'rgb(255, 206, 86,0.8)',
             }]
         };
 
