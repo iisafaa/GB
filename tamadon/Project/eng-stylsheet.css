@@ -16,6 +16,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #5B8B5A;
 }
+
 /* === Custom Scroll Bar CSS === */
 /* Add your custom scrollbar styles here */
 
@@ -772,7 +773,7 @@
 }
 
 .screen .settings-check {
-  
+
     height: 90px;
     top: 40px;
     left: 60px;
@@ -794,14 +795,14 @@
     letter-spacing: 0;
     line-height: normal;
     font-family: 'Tajawal'
-   
+
 }
 
 
 
 /* sand on road*/
 .screen .text-wrapper-7 {
-   
+
     top: 100px;
     left: 1030px;
     position: absolute;
@@ -813,6 +814,7 @@
     line-height: normal;
     font-family: 'Tajawal'
 }
+
 .screen .text-wrapper-8 {
 
     top: 60px;
@@ -828,6 +830,7 @@
     direction: rtl;
     font-family: 'Tajawal'
 }
+
 .screen .x {
 
     height: 90px;
@@ -841,7 +844,7 @@
 
 /* pothols*/
 .screen .text-wrapper-3 {
-   
+
     top: 60px;
     left: 540px;
     /* font-family: "Tajawal-Medium", Helvetica;*/
@@ -867,7 +870,7 @@
     letter-spacing: 0;
     line-height: normal;
     font-family: 'Tajawal'
-   
+
 }
 
 .screen .settings {
@@ -1064,6 +1067,33 @@
     height: 500px;
 }
 
+.sq {
+    position: absolute;
+    width: 120px;
+    height: 15px;
+    background-color: white;
+    left: 140px;
+    top: 58px;
+}
+
+.sq2 {
+    position: absolute;
+    width: 170px;
+    height: 15px;
+    background-color: white;
+    left: 900px;
+    top: 58px;
+}
+
+.sq3 {
+    position: absolute;
+    width: 170px;
+    height: 15px;
+    background-color:white;
+    left: 500px;
+    top: 58px;
+}
+
 /* image pop up window container*/
 
 .image-pop-container {
@@ -1082,7 +1112,7 @@
 
 
 
-.pop-img-box{
+.pop-img-box {
     position: absolute;
     width: 280px;
     height: 280px;
@@ -1097,7 +1127,7 @@
     width: 250px;
     height: 250px;
     top: 10px;
-left: 15px;
+    left: 15px;
     object-fit: cover;
 }
 
@@ -1108,8 +1138,8 @@ left: 15px;
     height: 20;
     background-color: transparent;
     border: none;
-   
-    
+
+
 }
 
 .close:hover {
@@ -1119,7 +1149,7 @@ left: 15px;
 }
 
 
-.move-button{
+.move-button {
     position: absolute;
     width: 200px;
     height: 30px;
@@ -1132,18 +1162,18 @@ left: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border: none;
-    text-align:justify;
+    text-align: justify;
     padding-top: 4px;
     padding-left: 10px;
 
 }
 
-.move-button:hover{
-    background-color:#bfd99f;
+.move-button:hover {
+    background-color: #bfd99f;
     color: #ffffff;
 }
 
-.move-txt{
+.move-txt {
     display: inline-block;
     font-family: "Tajawal-Medium", Helvetica;
     font-weight: 500;
