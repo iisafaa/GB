@@ -1188,3 +1188,8 @@
     font-family: 'Tajawal'
 
 }
+
+.explaination {
+    position: absolute;
+    top: 375px;
+}
